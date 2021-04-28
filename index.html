@@ -9,15 +9,18 @@
 <link rel="stylesheet" href="responsive.css">
     <!-- jQuery CDN -->
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-
+<script src="jquery-1.12.4.min.js"></script>
+<script src="jquery.scrollTo.min.js"></script>
+<script src="main.js"></script>
 <!-- Slick.js -->
 <link rel="stylesheet" href="slick-theme.css">
 <link rel="stylesheet" href="slick.css">
 <script src="slick.js"></script>
 <style>
     /* Icon Fontawesome&Xeicon */
-    @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-  @import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+     @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+     @import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
     body{
         background-color:greenyellow;
         margin: 0;
@@ -74,30 +77,21 @@ header.active .ginner{
 
 
 .btn-top {
-        float: right;
         position: fixed;
         right: 20px;
         bottom: 20px;
-        text-decoration: none;
+        font-size: 26px;
+        color: white;
+        background-color: black;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 40px;
         transform: translateY(100px);
         transition: 0.5s;
       }
   
-      .btn-top:before {
-        content: "\e915";
-        font-family: xeicon;
-        background-color: black;
-        color: white;
-        font-size: 60px;
-        font-weight: bold;
-        width: 30px;
-        height: 20px;
-
-        border-radius: 50%;
-        opacity: 0;
-  transform: translateY(100px);
-  transition: 0.5s;
-      }
 .btn-top.active{
     transform: translateY(0);
     opacity: 1;
@@ -178,13 +172,14 @@ footer{
 
 <div>
 
-  <a class="btn-top"href="#"></a>
+  <a href="#" class="btn-top"><i class="xi-angle-up"></i></a>
+
 <footer>
   <div></div>
 </footer>
 <!-- btn-top Jquery-->
 <script>
-  $('header a, .btn-top').click(function(){
+  $('header a, a.btn-top').click(function(){
      $.scrollTo(this.hash || 0, 900 );
      e.preventDefault();
  }) 
