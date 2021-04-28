@@ -17,7 +17,38 @@
 <style>
     body{
         background-color:greenyellow;
+        margin: 0;
     }
+
+    header{
+ color: white;
+ text-align: center;
+ font-size: 20px;
+ position: fixed;
+ width: 100%;
+ top: 0;
+ left: 0;
+ ;
+    }
+.linner, .ginner{
+  transition: 0.5s;
+}
+    .linner{
+      background-color: hotpink;
+      height: 50px;
+      line-height: 30px;
+    }
+
+    .ginner{
+background-color: black;
+height: 80px;
+line-height: 80px;
+    }
+header.active .linner{}
+header.active .ginner{
+  background-color: white;
+  box-shadow: 0 3px 3px (0,0,0,0.1);
+}
     .review{
         width: 1000px;
         margin: auto;
@@ -45,8 +76,10 @@
             <div class="linner">linner</div>
             <div class="ginner">ginner</div>
         </header>
+      </div>
+
  <section>
-    </div>
+
     <h1>자바를 잡아보자 팀의 홈페이지 입니다.</h1>
     <h2>공지사항, 매장소개, 베스트상품, 이벤트 로 구성될 예정입니다</h2>
 
@@ -54,7 +87,7 @@
 		아직 미완성입니다. 
         안녕하세요.
 	</h3>
-
+</div>
   <!-- Slick Slider -->
   <div class="review">
     <div>your content</div>
@@ -70,10 +103,12 @@
     <div>your content</div>
     <div>your content</div>
   </div>
+
 </section>
+<div>
 
+<a class="btn-top"href="#"></a>
 
-<a class="btn-top"href="#"><i class="fafa-arrow-up"></i></a>
 <script>
     $('.review').slick({
         arrows: true,

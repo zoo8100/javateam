@@ -2,15 +2,25 @@
   @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
   @import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
 
-    .btn-gototop {
+    .btn-top {
         float: right;
-        margin-right: 30px;
+        position: fixed;
+        right: 20px;
+        text-decoration: none;
       }
   
-      .btn-gototop:before {
+      .btn-top:before {
         content: "\e915";
         font-family: xeicon;
-        color: black;
+        font-style: none;
+        background-color: black;
+        color: white;
         font-size: 60px;
         font-weight: bold;
+        width: 30px;
+        height: 20px;
+        border-radius: 50%;
+  
       }
+
+      
