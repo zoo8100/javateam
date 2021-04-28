@@ -59,7 +59,7 @@
   transition: 0.5s;
 }
     .linner{
-      background-color: hotpink;
+      background-color: greenyellow;
       height: 50px;
       line-height: 50px;
   
@@ -85,7 +85,9 @@ section .backg{
   height: 500px;
   background-color: white;
   color: black;
-  display: block;
+  background: url(img/제목\ 없음.png)no-repeat center center ;
+  background-size: cover;
+ transition: 0.5s;
 }
 
 #main div{
@@ -93,16 +95,18 @@ section .backg{
 }
 .parent{
   border: 1px solid black;
-  width: 800px;
-  padding: 20px;
+  width: 100%;
+  height: 600px;
+  margin: 20% 0%;
   overflow: hidden;
+
 }
 
 .parent div{
   float: left;
   border: 3px solid red;
   width: 50%;
-  height: 200px;
+  height: 600px;
   box-sizing: border-box;
   text-align: center;
   line-height: 200px;
@@ -110,6 +114,7 @@ section .backg{
 }
 .left{
 animation: ltr 1s linear both;
+
 }
 
 .right{
@@ -123,7 +128,7 @@ animation: rtl 1s linear both;
 }
 100%{
   opacity: 1;
-  transform: translateX(0);
+  transform: translateX(-50px);
 }
 }
 
@@ -134,7 +139,7 @@ animation: rtl 1s linear both;
 }
 100%{
   opacity: 1;
-  transform: translateX(0);
+  transform: translateX(50px);
 }
 }
 
@@ -215,6 +220,7 @@ dddd
 	<h3>
 		itaque consequatur nihil quasi? Hic perspiciatis provident laboriosam nisi eos pariatur qui similique labore modi error illo, corporis nostrum veniam voluptatum quod corrupti non repellat possimus inventore ducimus, ratione magnam id nam ipsum? Possimus, recusandae? At laudantium, ea quisquam atque  aliquam atque necessitatibus temporibus rerum, veniam dolor nisi perspiciatis sed odit officia ad neque voluptate asperiores aliquid exercitationem velit ipsam. Nihil sed odit sunt rem voluptatum molestias omnis deleniti! Debitis incidunt veniam laborum quasi magnam tempora earum, natus labore beatae aspernatur maiores rem ipsum deserunt officiis aperiam nobis veritatis repudiandae animi fuga libero. Laboriosam corporis adipisci harum voluptatibus dicta, tempora dolore ipsa sunt quas quod porro? Nesciunt, sint? Laborum amet error in, quos vero perspiciatis aliquam suscipit architecto odit culpa labore obcaecati maiores quisquam consequuntur totam harum fugit. Sunt nobis tempore sit aut corporis. Tempore quidem perferendis atque laboriosam ducimus. Reiciendis, molestias quae? Consectetur necessitatibus similique fugiat omnis ut, maiores sit distinctio quasi quas magnam, odio fuga minima pariatur laboriosam minus, fugit nobis alias architecto corporis accusamus sequi. Deserunt iusto illo quas ab sequi, iure fugiat quod tempore officiis distinctio dolore odit itaque accusantium possimus illum accusamus voluptatem reiciendis quisquam blanditiis! Temporibus molestias saepe atque a autem omnis quisquam rem ex iusto accusantium. Nesciunt atque asperiores accusantium deleniti molestias commodi soluta ipsa impedit alias aliquid, quisquam ullam assumenda, laudantium exercitationem quasi, minima voluptatibus? Minus ut nemo porro dolore quas sequi ipsa debitis vel repudiandae expedita nobis quidem, dolores, nihil incidunt! Ad labore odit sint, dolore incidunt autem harum saepe recusandae reiciendis ratione, commodi, placeat odio eveniet? Aperiam, id hic blanditiis facere odio repellat debitis eius omnis exercitationem libero nulla quisquam nostrum unde rerum corrupti laudantium eaque doloribus tempore expedita recusandae, adipisci dolor tempora voluptas. Ea, expedita ut ipsam cumque commodi porro dicta facere nemo error? In aliquam maxime hic nostrum, fugit voluptatem id iure unde ut officiis, perspiciatis quas. Animi, quae. Saepe explicabo, maiores necessitatibus doloremque quam, quibusdam, dolore culpa beatae repellat distinctio assumenda numquam. A ex sint nesciunt illo pariatur assumenda eligendi molestias corporis illum, distinctio alias eaque maxime vel, labore perferendis quas officiis placeat architecto id saepe aperiam facilis sapiente! Possimus accusamus officia voluptate error nisi pariatur unde alias.
 	</h3>
+  <!-- Moving Box -->
 </div>
 <div class="parent">
   <div class="left wow"></div>
@@ -248,7 +254,14 @@ dddd
 </footer>
 <!-- Wow.js -->
 <script>
-  new WOW().init();
+  new WOW(
+    {
+                      boxClass:     'wow',  
+                      offset:       150,          
+                      mobile:       true,      
+                      live:         true       
+                    }
+  ).init();
   </script>
 <!-- btn-top Jquery-->
 <script>
