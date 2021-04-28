@@ -1,0 +1,84 @@
+-webkit-background-clip: text;
+글자 안에 이미지 넣기
+background-clip
+color:transparent;
+스크롤해도 고정
+background-attchment:fixed;
+스크롤할때 움직이는 건 scroll
+
+background-origin:padding-box 패딩까지 배경
+background-origin:border-box 테두리까지 배경
+background-origin:content-box 내용 영역만 배경
+
+사용자 동작에 반응하는 가상 클래스 선택자
+:link 방문하지 않은 링크에 스타일 적용
+:visited 방문한 링크에 스타일 적용
+:active 웹 요소를 활성화했을 때의 스타일 적용
+:hover 웹 요소에 마우스 커서를 올려놓을 때의 스타일 적용
+:focus 웹 요소에 초점이 맞추어졌을 때의 스타일 적용
+
+:target-앵커로 연결된 부분에 스타일 적용
+:enabled, :disabled -요소의 사용 여부에 따라 스타일 적용
+: checked -라디오 버튼이나 체크박스에 체크했을 때 스타일 적용
+:not 특정 요소를 제외하과 스타일 적용
+
+
+border-bottom solid 헤더 밑에 줄 그을 수 있음
+padding width를 navi list에 적용하면 메뉴 네모박스 가능
+
+li class="new" 해놓고 CSS에 li.new::after/ before 해서 
+content:"NEW::";
+font-size:x-samll;
+padding:2px 4px;
+margin: 0 10px;
+border-radius:2px;
+background: red;
+color: white;
+
+::first-line
+::first-letter 
+등도 있음
+
+:hover{
+    transform: traslateX(50px);
+X축으로 이동
+}
+translateY
+translate 10px 20px
+
+transform:scale()
+
+
+transform:rotate()회전
+
+transition: all 3s
+
+transform: rotateZ
+transform:rotate3d
+
+transition-property: width,height;
+transition-duration: 2s,1s;
+
+animation: rotate
+@keyframes rotate
+
+인라인 자바스크립트 <section class="welcome" onclick="location.'iphonex.html'">
+같은 탭에서 열기
+
+인라인 자바스크립트 다른 창에서 열기
+<section class="welcome" style="cursor: pointer;" onclick="window.open('https://o-hyunjin.netlify.app/index.html')">
+
+
+
+        <img src="./img/KakaoTalk_20210425_015521142_20.jpg" alt="" style="float: right;">
+        <img src="./img/KakaoTalk_20210425_015521142_27.jpg" alt="" style="float: right;">
+        <img src="./img/KakaoTalk_20210425_015521142_06.jpg" alt="" style="float: right;">
+        <img src="./img/KakaoTalk_20210425_015521142_28.jpg" alt="" style="float: right;">
+        <img src="./img/KakaoTalk_20210425_015521142_23.jpg" alt="" style="float: right;">
+        <img src="./img/KakaoTalk_20210425_015521142_11.jpg" alt="" style="float: right;">
+        <img src="./img/KakaoTalk_20210425_015533442_01.jpg" alt="" style="float: right;">
+        <img src="./img/KakaoTalk_20210425_015521142_26.jpg" alt="" style="float: right;">
+        <img src="./img/KakaoTalk_20210425_015521142_17.jpg" alt="" style="float: right;">
+        <img src="./img/KakaoTalk_20210425_015521142_03.jpg" alt="" style="float: right;">
+        <img src="./img/KakaoTalk_20210425_015521142_02.jpg" alt="" style="float: right;">
+        <img src="./img/KakaoTalk_20210425_015533442_05.jpg" alt="" style="float: right;">
