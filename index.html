@@ -15,6 +15,9 @@
 <link rel="stylesheet" href="slick.css">
 <script src="slick.js"></script>
 <style>
+    /* Icon Fontawesome&Xeicon */
+    @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+  @import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
     body{
         background-color:greenyellow;
         margin: 0;
@@ -28,6 +31,21 @@
  width: 100%;
  top: 0;
  left: 0;
+
+    }
+    header a{
+      text-decoration: none;
+      font-size: 30px;
+      font-weight: bold;
+      color: orange;
+    }
+    header li{
+      display: inline-block;
+      padding-left: 50px;
+    }
+
+    header ul{
+      margin: 0px;
     }
 .linner, .ginner{
   transition: 0.5s;
@@ -35,10 +53,12 @@
     .linner{
       background-color: hotpink;
       height: 50px;
-      line-height: 30px;
+      line-height: 50px;
+  
     }
 
     .ginner{
+
 background-color: black;
 height: 80px;
 line-height: 80px;
@@ -52,6 +72,42 @@ header.active .ginner{
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.548);
 }
 
+
+.btn-top {
+        float: right;
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        text-decoration: none;
+        transform: translateY(100px);
+        transition: 0.5s;
+      }
+  
+      .btn-top:before {
+        content: "\e915";
+        font-family: xeicon;
+        background-color: black;
+        color: white;
+        font-size: 60px;
+        font-weight: bold;
+        width: 30px;
+        height: 20px;
+
+        border-radius: 50%;
+        opacity: 0;
+  transform: translateY(100px);
+  transition: 0.5s;
+      }
+.btn-top.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+      
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: teal;
+}
     .review{
         width: 1000px;
         margin: auto;
@@ -78,13 +134,17 @@ header.active .ginner{
         <header>
             <div class="linner">linner</div>
             <div class="ginner">
-              <a href="index.html">Home</a>
-              <a href="notice.html">Notice</a>
-              <a href="introduce.html">Introduce</a>
-              <a href="event.html">Event</a>
-            </div>
+            <nav>
+              <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="notice.html">Notice</a></li>
+             <li><a href="introduce.html">Introduce</a></li>
+             <li><a href="event.html">Event</a></li>
+            </ul>
+          </nav>
+        </div>
         </header>
-      </div>
+ 
 
  <section>
 <div>
@@ -115,9 +175,10 @@ header.active .ginner{
   </div>
 
 </section>
+
 <div>
 
-<a class="btn-top"href="#"></a>
+  <a class="btn-top"href="#"></a>
 <footer>
   <div></div>
 </footer>
