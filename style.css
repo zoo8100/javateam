@@ -20,7 +20,17 @@
         width: 30px;
         height: 20px;
         border-radius: 50%;
-  
+        opacity: 0;
+  transform: translateY(100px);
+  transition: 0.5s;
       }
-
+.btn-top.active{
+    transform: translateY(0);
+    opacity: 1;
+}
       
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: teal;
+}
