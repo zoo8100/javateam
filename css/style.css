@@ -1,3 +1,181 @@
-  /* Icon Fontawesome&Xeicon */
-  @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-  @import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+body {
+    background-color: greenyellow;
+    margin: 0;
+}
+
+header {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+}
+
+header a {
+    text-decoration: none;
+    font-size: 30px;
+    color: orange;
+
+}
+
+header a:hover {
+    font-weight: bold;
+    text-shadow: 2px 2px 3px rgb(17, 226, 164);
+}
+
+header li {
+    display: inline-block;
+    padding-left: 50px;
+}
+
+header ul {
+    margin: 0px;
+}
+
+.linner,
+.ginner {
+    transition: 0.5s;
+}
+
+.linner {
+    background-color: greenyellow;
+    height: 50px;
+    line-height: 50px;
+
+}
+
+.ginner {
+
+    background-color: black;
+    height: 80px;
+    line-height: 80px;
+}
+
+header.active .linner {
+    display: none;
+
+}
+
+header.active .ginner {
+    background-color: white;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.548);
+}
+
+section .backg {
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    color: black;
+    background: url(./img/제목\ 없음.png)no-repeat center center;
+    background-size: cover;
+    transition: 0.5s;
+}
+
+#main div {
+    line-height: 90px;
+}
+
+.parent {
+    border: 1px solid black;
+    width: 100%;
+    height: 600px;
+    margin: 20% 0%;
+    overflow: hidden;
+
+}
+
+.parent div {
+    float: left;
+    border: 3px solid red;
+    width: 50%;
+    height: 600px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 200px;
+    font-size: 3em;
+}
+
+.left {
+    animation: ltr 1s linear both;
+
+}
+
+.right {
+    animation: rtl 1s linear both;
+}
+
+@keyframes ltr {
+    0% {
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(-50px);
+    }
+}
+
+@keyframes rtl {
+    0% {
+        opacity: 0;
+        transform: translateX(150px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(50px);
+    }
+}
+
+.btn-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    font-size: 26px;
+    color: white;
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    transform: translateY(100px);
+    transition: 0.5s;
+}
+
+.btn-top.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: teal;
+}
+
+.review {
+    width: 1000px;
+    margin: auto;
+
+}
+
+.review div {
+    border: 1px solid #000;
+    height: 300px;
+    background-color: #ddd;
+}
+
+.slick-arrow {
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .review {
+        width: 100%;
+    }
+}
