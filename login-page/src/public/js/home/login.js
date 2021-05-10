@@ -1,5 +1,6 @@
 "use strict"
 
+
 const id = document.querySelector("#id"),
 password = document.querySelector("#password"),
 loginBtn = document.querySelector("button")
@@ -12,15 +13,25 @@ function login() {
       password: password.value,
   };
 
-  console.log(req);
-  console.log(JSON.stringify(req));
+//   console.log(req);
+//   console.log(JSON.stringify(req));
+  //API 만들기
 fetch("/login", {
     method:"POST",
-    header:{
-        "Content-Type":"application/json"
+    headers:{
+        "Content-Type":"application/json",
     },
     body: JSON.stringify(req),
-});
+})
+.then((res)=> res.json())
+.then((res)=> {
+    if (res.success){
+        location.href="/";
+    } else {
+        alert(res.msg);
+    }
+    });
 }
+
 
  
