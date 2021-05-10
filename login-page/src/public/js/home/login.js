@@ -13,8 +13,7 @@ function login() {
       password: password.value,
   };
 
-//   console.log(req);
-//   console.log(JSON.stringify(req));
+
   //API 만들기
 fetch("/login", {
     method:"POST",
@@ -30,6 +29,9 @@ fetch("/login", {
     } else {
         alert(res.msg);
     }
+    })
+    .catch((err) => {
+        console.error(new Error("로그인 중 에러가 발생하였습니다."));
     });
 }
 
