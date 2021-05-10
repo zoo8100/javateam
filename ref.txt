@@ -69,16 +69,3 @@ animation: rotate
 <section class="welcome" style="cursor: pointer;" onclick="window.open('https://o-hyunjin.netlify.app/index.html')">
 
 
-
-        <img src="./img/KakaoTalk_20210425_015521142_20.jpg" alt="" style="float: right;">
-        <img src="./img/KakaoTalk_20210425_015521142_27.jpg" alt="" style="float: right;">
-        <img src="./img/KakaoTalk_20210425_015521142_06.jpg" alt="" style="float: right;">
-        <img src="./img/KakaoTalk_20210425_015521142_28.jpg" alt="" style="float: right;">
-        <img src="./img/KakaoTalk_20210425_015521142_23.jpg" alt="" style="float: right;">
-        <img src="./img/KakaoTalk_20210425_015521142_11.jpg" alt="" style="float: right;">
-        <img src="./img/KakaoTalk_20210425_015533442_01.jpg" alt="" style="float: right;">
-        <img src="./img/KakaoTalk_20210425_015521142_26.jpg" alt="" style="float: right;">
-        <img src="./img/KakaoTalk_20210425_015521142_17.jpg" alt="" style="float: right;">
-        <img src="./img/KakaoTalk_20210425_015521142_03.jpg" alt="" style="float: right;">
-        <img src="./img/KakaoTalk_20210425_015521142_02.jpg" alt="" style="float: right;">
-        <img src="./img/KakaoTalk_20210425_015533442_05.jpg" alt="" style="float: right;">
