@@ -2,9 +2,18 @@
   @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
   @import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
   
+[class*=fontawesome-]:before {
+    font-family: "FontAwesome", sans-serif;
+}
+
 body {
-  background-color: greenyellow;
-  margin: 0;
+  margin:0;
+    background: -owg-linear-gradient(left, #272838, #2b2d41, #393549, #433545);
+    background: -webkit-linear-gradient(left, #272838, #2b2d41, #393549, #433545);
+    background: -moz-linear-gradient(left, #272838, #2b2d41, #393549, #433545);
+    background: -o-linear-gradient(left, #272838, #2b2d41, #393549, #433545);
+    background: linear-gradient(left, #272838, #2b2d41, #393549, #433545);
+    font-family: "Raleway", sans-serif;
 }
 
 header {
@@ -45,7 +54,7 @@ header ul {
 }
 
 .linner {
-  background-color: greenyellow;
+  background-color: white;
   height: 50px;
   line-height: 50px;
 
@@ -73,7 +82,7 @@ section .backg {
   height: 500px;
   background-color: white;
   color: black;
-  background: url(../img/제목\ 없음.png)no-repeat center center;
+  background: url(/img/제목\ 없음.png)no-repeat center center;
   background-size: cover;
   transition: 0.5s;
 }
@@ -159,6 +168,7 @@ section .backg {
 footer {
   width: 100%;
   height: 100px;
+  margin:0px;
   background-color: teal;
 }
 
