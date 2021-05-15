@@ -27,14 +27,14 @@ class UserStorage{
             return newUser;
         },{});
         return userInfo;
-
     }
+
     static save(userInfo){
         const users = this.#users;
         users.id.push(userInfo.id);
-        users.password.push(userInfo.password);
         users.name.push(userInfo.name);
-        console.log(users);
+        users.password.push(userInfo.password);
+   return {success: true};
     }
 }
 

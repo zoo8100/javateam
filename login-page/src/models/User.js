@@ -20,7 +20,8 @@ if (id){
     }
     register(){
         const client = this.body;
-        UserStorage.save(client);
+       const response = UserStorage.save(client);
+       return response;
     }
 }
 module.exports = User;

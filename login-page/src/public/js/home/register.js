@@ -1,8 +1,10 @@
 "use strict"
 
+// const { name } = require("ejs");
+
 
 const id = document.querySelector("#id"),
-    name = document.querySelector("#name"),
+    nickName = document.querySelector("#name"),
     confirmPsword = document.querySelector("#confirm-psword"), 
     password = document.querySelector("#password"),
     registerBtn = document.querySelector("#button");
@@ -10,11 +12,20 @@ const id = document.querySelector("#id"),
 registerBtn.addEventListener("click", register);
 
 function register() {
+    if (!id.value) {
+        return alert("아이디는 필수 입력입니다.")
+    };
+    if (!password.value){ 
+    return alert("비밀번호는 필수 입력입니다.")
+    };
+    if (password !== confirmPsword.value){
+        return alert("비밀번호가 일치하지 않습니다.");
+    };
     const req = {
         id: id.value,
-        name: name.value,
+        name: nickName.value,
         password: password.value,
-        confirmPsword: confirmPsword.value,
+       
  };
    
 
