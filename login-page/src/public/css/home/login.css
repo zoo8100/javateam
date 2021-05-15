@@ -120,12 +120,13 @@ div.left input[type=password]:focus {
     border: 0.1em solid #919191;
 }
 
-div.left button {
+div.left #button {
     background: #f85f64;
     color: #fff;
     outline: none;
     text-transform: uppercase;
     padding: 1.2em;
+    width: 65%;
     overflow: hidden;
     border: none;
     letter-spacing: 0.1em;
@@ -142,7 +143,7 @@ div.left button {
     transition: 0.15s all ease-in-out;
 }
 
-div.left input[type=submit]:hover {
+div.left #button:hover {
     background: rgba(248, 95, 100, 0.8);
 }
 
