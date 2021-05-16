@@ -1,0 +1,174 @@
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Java Tart</title>
+      <link rel="stylesheet" href="/css/home/index.css">
+      <link rel="stylesheet" href="/css/home/responsive.css">
+      <!-- <script src="/js/home/login.js" defer></script> -->
+      <!-- jQuery-->
+
+      <script src="/jquery/jquery-3.4.1.min.js"></script>
+      <script src="/jquery/jquery.scrollTo.min.js"></script>
+      <script src="/jquery/wow.min.js"></script>
+      <script src="/jquery/wow.js"></script>
+      <script src="/jquery/btn-top.js"></script>
+      <script src="/jquery/btnactive.js"></script>
+      <!-- Slick.js -->
+      <link rel="stylesheet" href="/css/home/slick.css">
+      <link rel="stylesheet" href="/css/home/slick-theme.css">
+      <script src="/jquery/slick.js"></script>
+      <script src="/jquery/slickslider.js"></script>
+      <style>
+      /* Icon Fontawesome&Xeicon */
+      @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+      @import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+      </style>
+      </head>
+      <body>
+      <div class="container">
+      <header>
+      <div class="linner">
+      <li><a href="/login">log in</a></li>
+      <li><a href="/register"></a></li>
+      <li><a href="/mypage"></a></li>
+      <li><a href="/cart"></a></li>
+      <li><a href="/orders"></a></li>
+      </div>
+      <div class="ginner">
+      <nav>
+      <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/notice">Notice</a></li>
+      <li><a href="/introduce">Introduce</a></li>
+      <li><a href="/bestpd">Best</a></li>
+      <li><a href="/event">Event</a></li>
+      </ul>
+      </nav>
+      </div>
+      </header>
+
+      <section>
+      <div class="backg">
+
+      dddd
+      </div>
+
+      </section>
+      <section id="main">
+      <div>
+      <h1>자바를 잡아보자 팀의 홈페이지 입니다.</h1>
+      <h2>공지사항, 매장소개, 베스트상품, 이벤트 로 구성될 예정입니다</h2>
+
+      <h3>
+      itaque consequatur nihil quasi? Hic perspiciatis provident laboriosam nisi eos pariatur qui similique labore modi error illo, corporis nostrum veniam voluptatum quod corrupti non repellat possimus inventore ducimus, ratione magnam id nam ipsum? Possimus, recusandae? At laudantium, ea quisquam atque  aliquam atque necessitatibus temporibus rerum, veniam dolor nisi perspiciatis sed odit officia ad neque voluptate asperiores aliquid exercitationem velit ipsam. Nihil sed odit sunt rem voluptatum molestias omnis deleniti! Debitis incidunt veniam laborum quasi magnam tempora earum, natus labore beatae aspernatur maiores rem ipsum deserunt officiis aperiam nobis veritatis repudiandae animi fuga libero. Laboriosam corporis adipisci harum voluptatibus dicta, tempora dolore ipsa sunt quas quod porro? Nesciunt, sint? Laborum amet error in, quos vero perspiciatis aliquam suscipit architecto odit culpa labore obcaecati maiores quisquam consequuntur totam harum fugit. Sunt nobis tempore sit aut corporis. Tempore quidem perferendis atque laboriosam ducimus. Reiciendis, molestias quae? Consectetur necessitatibus similique fugiat omnis ut, maiores sit distinctio quasi quas magnam, odio fuga minima pariatur laboriosam minus, fugit nobis alias architecto corporis accusamus sequi. Deserunt iusto illo quas ab sequi, iure fugiat quod tempore officiis distinctio dolore odit itaque accusantium possimus illum accusamus voluptatem reiciendis quisquam blanditiis! Temporibus molestias saepe atque a autem omnis quisquam rem ex iusto accusantium. Nesciunt atque asperiores accusantium deleniti molestias commodi soluta ipsa impedit alias aliquid, quisquam ullam assumenda, laudantium exerci
+      </h3>
+      <!-- Moving Box -->
+      </div>
+      <div class="parent">
+      <div class="left wow"></div>
+      <div class="right wow"></div>
+      </div>
+      </div>
+      <!-- Slick Slider -->
+      <div class="review">
+      <div>your content</div>
+      <div>your content</div>
+      <div>your content</div>
+      <div>your content</div>
+      <div>your content</div>
+      <div>your content</div>
+      <div>your content</div>
+      <div>your content</div>
+      <div>your content</div>
+      <div>your content</div>
+      <div>your content</div>
+      <div>your content</div>
+      </div>
+
+      </section>
+
+      <div>
+
+      <a href="#" class="btn-top"><i class="xi-angle-up"></i></a>
+
+      <footer>
+      <div>© 2021 자바를 자바보자 All Rights Reserved</div>
+      </footer>
+      <script>
+  new WOW(
+    {
+                      boxClass:     'wow',  
+                      offset:       150,          
+                      mobile:       true,      
+                      live:         true       
+                    }
+  ).init();
+  </script>
+<!-- btn-top Jquery-->
+<script>
+  $('header a, a.btn-top').click(function(){
+     $.scrollTo(this.hash || 0, 900 );
+     e.preventDefault();
+ }) 
+</script>
+<!-- Header btn-top Active Class -->
+<script>
+$(window).scroll(function(){
+if($(window).scrollTop() > 50) {
+  $('header, .btn-top').addClass('active')
+}
+else{
+  $('header, .btn-top').removeClass('active')
+}
+})
+</script>
+<!-- Slick Slider Jquery -->
+<script>
+    $('.review').slick({
+        arrows: true,
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2500,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+    </script>
+
+
+
+
+      </body>
+      </html>
