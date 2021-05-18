@@ -10,6 +10,8 @@ const home = require("./src/routes/home");
 //앱 세팅
 app.set("views", "./src/views");
 app.set("view engine", "ejs");
+
+
 app.use(express.static(`${__dirname}/src/public/`));
 
 //body-parser 대신 express 이용하였음

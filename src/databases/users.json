@@ -1,1 +1,23 @@
-{"id":["hyejuChoi","hyunjinO","joonbuUni","hyejuCho"],"password":["1111","1111","1234","ss"],"name":["최혜주","오현진","중부대","최혜주"]}
+{
+	"id": [
+		"hyejuChoi",
+		"hyunjinO",
+		"joonbuUni",
+		"hyejuCho",
+		"jjj"
+	],
+	"password": [
+		"1111",
+		"1111",
+		"1234",
+		"ss",
+		"dd"
+	],
+	"name": [
+		"최혜주",
+		"오현진",
+		"중부대",
+		"최혜주",
+		"테스트"
+	]
+}
