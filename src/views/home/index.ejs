@@ -1,4 +1,4 @@
-      <!DOCTYPE html>
+     <!DOCTYPE html>
       <html lang="en">
       <head>
       <meta charset="UTF-8">
@@ -7,26 +7,25 @@
       <title>Java Tart</title>
       <link rel="stylesheet" href="/css/home/index.css">
       <link rel="stylesheet" href="/css/home/responsive.css">
+     
       <!-- <script src="/js/home/login.js" defer></script> -->
       <!-- jQuery-->
-
-      <script src="/jquery/jquery-3.4.1.min.js"></script>
-      <script src="/jquery/jquery.scrollTo.min.js"></script>
-      <script src="/jquery/wow.min.js"></script>
-      <script src="/jquery/wow.js"></script>
-      <script src="/jquery/btn-top.js"></script>
-      <script src="/jquery/btnactive.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+      <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+        crossorigin="anonymous"></script>
+     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.3/jquery.scrollTo.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js"></script>  
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  
       <!-- Slick.js -->
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
       <link rel="stylesheet" href="/css/home/slick.css">
       <link rel="stylesheet" href="/css/home/slick-theme.css">
-      <script src="/jquery/slick.js"></script>
-      <script src="/jquery/slickslider.js"></script>
-      <style>
-      /* Icon Fontawesome&Xeicon */
-      @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-      @import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
-      </style>
+   
       </head>
+     
       <body>
       <div class="container">
       <header>
@@ -48,6 +47,25 @@
       </ul>
       </nav>
       </div>
+      <!-- Hamburger -->
+      <div class="sidemenu">
+        <input type="checkbox" id="trigger">
+        <label for="trigger">
+          <span></span>
+          <span></span>
+          <span></span>
+      
+        </label>
+        <div class="sidebar_1">
+        </div>
+      
+        <div class="sidebar_2">
+          <input type="checkbox" id="trigger">
+          <label for="trigger">
+          </label>
+          <!-- onclick="history.go(0)" -->
+        </div>
+        <div class="sidebar_3">
       </header>
 
       <section>
@@ -58,12 +76,15 @@
 
       </section>
       <section id="main">
-      <div>
+      <div id="app">
+       <app-header></app-header>
+       <app-div></app-div>
+      
       <h1>자바를 잡아보자 팀의 홈페이지 입니다.</h1>
       <h2>공지사항, 매장소개, 베스트상품, 이벤트 로 구성될 예정입니다</h2>
 
       <h3>
-      itaque consequatur nihil quasi? Hic perspiciatis provident laboriosam nisi eos pariatur qui similique labore modi error illo, corporis nostrum veniam voluptatum quod corrupti non repellat possimus inventore ducimus, ratione magnam id nam ipsum? Possimus, recusandae? At laudantium, ea quisquam atque  aliquam atque necessitatibus temporibus rerum, veniam dolor nisi perspiciatis sed odit officia ad neque voluptate asperiores aliquid exercitationem velit ipsam. Nihil sed odit sunt rem voluptatum molestias omnis deleniti! Debitis incidunt veniam laborum quasi magnam tempora earum, natus labore beatae aspernatur maiores rem ipsum deserunt officiis aperiam nobis veritatis repudiandae animi fuga libero. Laboriosam corporis adipisci harum voluptatibus dicta, tempora dolore ipsa sunt quas quod porro? Nesciunt, sint? Laborum amet error in, quos vero perspiciatis aliquam suscipit architecto odit culpa labore obcaecati maiores quisquam consequuntur totam harum fugit. Sunt nobis tempore sit aut corporis. Tempore quidem perferendis atque laboriosam ducimus. Reiciendis, molestias quae? Consectetur necessitatibus similique fugiat omnis ut, maiores sit distinctio quasi quas magnam, odio fuga minima pariatur laboriosam minus, fugit nobis alias architecto corporis accusamus sequi. Deserunt iusto illo quas ab sequi, iure fugiat quod tempore officiis distinctio dolore odit itaque accusantium possimus illum accusamus voluptatem reiciendis quisquam blanditiis! Temporibus molestias saepe atque a autem omnis quisquam rem ex iusto accusantium. Nesciunt atque asperiores accusantium deleniti molestias commodi soluta ipsa impedit alias aliquid, quisquam ullam assumenda, laudantium exerci
+      itaque consequatur nihil quasi? Hic perspiciatis provident laboriosam nisi eos pariatur qui similique labore modi error illo, corporis nostrum veniam voluptatum quod corrupti non repellat possimus inventore ducimus, ratione magnam id nam ipsum? Possimus, recusandae? At laudantium, ea quisquam atque  aliquam atque necessitatibus temporibus rerum, veniam dolor nisi perspiciatis sed odit officia ad neque voluptate asperiores aliquid exercitationem velit ipsam. Nihil sed odit sunt rem voluptatum molestias omnis 
       </h3>
       <!-- Moving Box -->
       </div>
@@ -82,10 +103,7 @@
       <div>your content</div>
       <div>your content</div>
       <div>your content</div>
-      <div>your content</div>
-      <div>your content</div>
-      <div>your content</div>
-      <div>your content</div>
+ 
       </div>
 
       </section>
@@ -93,43 +111,51 @@
       <div>
 
       <a href="#" class="btn-top"><i class="xi-angle-up"></i></a>
-
+      </div>
+  
       <footer>
       <div>© 2021 자바를 자바보자 All Rights Reserved</div>
       </footer>
-<<<<<<< HEAD
-      
-=======
+
+
       <script>
-  new WOW(
-    {
-                      boxClass:     'wow',  
-                      offset:       150,          
-                      mobile:       true,      
-                      live:         true       
-                    }
-  ).init();
-  </script>
+     
+        new WOW(
+          {
+                            boxClass:     'wow',  
+                            offset:       150,          
+                            mobile:       true,      
+                            live:         true       
+                          }
+        ).init();
+      </script>
 <!-- btn-top Jquery-->
 <script>
-  $('header a, a.btn-top').click(function(){
-     $.scrollTo(this.hash || 0, 900 );
-     e.preventDefault();
- }) 
+    
+      $('header a, a.btn-top').click(function(){
+         $.scrollTo(this.hash || 0, 900 );
+         e.preventDefault();
+     }) 
+
+      // })
 </script>
 <!-- Header btn-top Active Class -->
 <script>
-$(window).scroll(function(){
-if($(window).scrollTop() > 50) {
-  $('header, .btn-top').addClass('active')
-}
-else{
-  $('header, .btn-top').removeClass('active')
-}
-})
+ 
+      $(window).scroll(function(){
+      if($(window).scrollTop() > 50) {
+        $('header, .btn-top').addClass('active');
+      }
+      else{
+        $('header, .btn-top').removeClass('active');
+      }
+      })
+
+    
 </script>
 <!-- Slick Slider Jquery -->
 <script>
+ 
     $('.review').slick({
         arrows: true,
   dots: true,
@@ -168,9 +194,27 @@ else{
     // instead of a settings object
   ]
 });
-    </script>
->>>>>>> ce832eed910ed4d87c4bfa251eb3e147e9645494
 
+
+    </script>
+    <!-- < src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></>
+  <>
+    Vue.component('app-header', {
+      template:' <h1>Header</h1>'
+    })
+
+    Vue.component('app-div', {
+      template:'<div>content</div>'
+    })
+  new Vue({
+      el: '#app',
+      components: {
+        'app-footer': {
+          template: '<footer>footer</footer>'
+        }
+      }
+  })
+  </> -->
 
 
 
