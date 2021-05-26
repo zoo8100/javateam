@@ -132,7 +132,7 @@ input[id=trigger]:checked+label {
   left: 30%;
 } 
 
- Hamburger menubar
+ /* Hamburger menubar */
 .sidebar_1 {
   width: 30%;
   height: 100vh;
