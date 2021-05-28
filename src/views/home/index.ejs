@@ -30,13 +30,31 @@
       <div class="container">
       <header>
       <div class="linner">
-      <li><a href="/login">log in</a></li>
-      <li><a href="/register"></a></li>
-      <li><a href="/mypage"></a></li>
-      <li><a href="/cart"></a></li>
-      <li><a href="/orders"></a></li>
+      <li><a href="/login">sign in</a></li>
+      <li><a href="/cart">cart</a></li>
+      <li><a href="/orders">orders</a></li>
       </div>
       <div class="ginner">
+          <!-- Hamburger -->
+          <div class="sidemenu">
+            <input type="checkbox" id="trigger">
+            <label for="trigger">
+              <span></span>
+              <span></span>
+              <span></span>
+          
+            </label>
+            <div class="sidebar_1">
+            </div>
+          
+            <div class="sidebar_2">
+              <input type="checkbox" id="trigger">
+              <label for="trigger">
+              </label>
+              <!-- onclick="history.go(0)" -->
+            </div>
+          
+          </div>
       <nav>
       <ul>
       <li><a href="/">Home</a></li>
@@ -49,46 +67,25 @@
       </div>
       </div>
       </section>
-      <!-- Hamburger -->
-      <div class="sidemenu">
-          <input type="checkbox" id="trigger">
-          <label for="trigger">
-            <span></span>
-            <span></span>
-            <span></span>
-         
-          </label>
-          <div class="sidebar_1">
-          </div>
-          
-          <div class="sidebar_2">
-            <input type="checkbox" id="trigger">
-          <label for="trigger">
-          </label>
-      <!-- onclick="history.go(0)" -->
-      </div>
     
-      </div>
       </header>
 
       <section>
-      <div class="backg">
-
-      dddd
-      </div>
-
+        <div class="backg">
+        </div>
       </section>
-      <section id="main">
-      <div id="app">
+      <section class="main">
+        <div id="app">
        <app-header></app-header>
        <app-div></app-div>
-      
+      <div id="article">
       <h1>자바를 잡아보자 팀의 홈페이지 입니다.</h1>
       <h2>공지사항, 매장소개, 베스트상품, 이벤트 로 구성될 예정입니다</h2>
 
       <h3>
       itaque consequatur nihil quasi? Hic perspiciatis provident laboriosam nisi eos pariatur qui similique labore modi error illo, corporis nostrum veniam voluptatum quod corrupti non repellat possimus inventore ducimus, ratione magnam id nam ipsum? Possimus, recusandae? At laudantium, ea quisquam atque  aliquam atque necessitatibus temporibus rerum, veniam dolor nisi perspiciatis sed odit officia ad neque voluptate asperiores aliquid exercitationem velit ipsam. Nihil sed odit sunt rem voluptatum molestias omnis 
       </h3>
+      </div>
       <!-- Moving Box -->
       </div>
       <div class="parent">
@@ -161,10 +158,10 @@
  
     $('.review').slick({
         arrows: true,
-  dots: true,
+        dots:false,
   infinite: true,
   speed: 500,
-  slidesToShow: 4,
+  slidesToShow: 3,
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 2500,
@@ -172,10 +169,10 @@
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 3,
         infinite: true,
-        dots: true
+        dots: false
       }
     },
     {

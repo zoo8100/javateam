@@ -1,18 +1,21 @@
   /* Icon Fontawesome&Xeicon */
   @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
   @import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+  @media(min-width:701px) {
+
+  /* Reset CSS */
+  * {
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
   
 [class*=fontawesome-]:before {
     font-family: "FontAwesome", sans-serif;
 }
 
 body {
-  margin:0;
-    background: -owg-linear-gradient(left, #272838, #2b2d41, #393549, #433545);
-    background: -webkit-linear-gradient(left, #272838, #2b2d41, #393549, #433545);
-    background: -moz-linear-gradient(left, #272838, #2b2d41, #393549, #433545);
-    background: -o-linear-gradient(left, #272838, #2b2d41, #393549, #433545);
-    background: linear-gradient(left, #272838, #2b2d41, #393549, #433545);
+    margin:0;
     font-family: "Raleway", sans-serif;
 }
 
@@ -42,6 +45,7 @@ header a:hover {
 header li {
   display: inline-block;
   padding-left: 50px;
+  padding-bottom: 30px;
 }
 
 header ul {
@@ -64,7 +68,7 @@ header ul {
 
   background-color: black;
   height: 80px;
-  line-height: 80px;
+  line-height: 30px;
 }
 
 header.active .linner {
@@ -106,13 +110,13 @@ label[for=trigger] span {
   padding: 1px;
 }
 label[for=trigger] span:nth-child(1) {
-  top: -10%;
+  top: 120%;
 }
 label[for=trigger] span:nth-child(2) {
-  top: 50%;
+  top: 200%;
 }
 label[for=trigger] span:nth-child(3) {
-  top: 110%;
+  top: 280%;
 }
 /* Sidebar Hamburger lines rotate */
     input[id=trigger]:checked+label span:nth-child(1) {
@@ -173,15 +177,18 @@ input[id=trigger]:checked~.sidebar_2 {
 section .backg {
   width: 100%;
   height: 500px;
-  background-color: white;
+  /* background-color: white; */
   color: black;
-  background: url(/img/제목\ 없음.png)no-repeat center center;
+  background: url(/img/cupcake-2749204_640.jpg) no-repeat center center;
   background-size: cover;
   transition: 0.5s;
+  z-index: 1000;
+  margin-top: 100px;
 }
 
-#main div {
+#article {
   line-height: 90px;
+  margin:10%;
 }
 
 .parent {
@@ -266,14 +273,17 @@ footer {
 }
 
 .review {
-  width: 1000px;
+ width:80%;
   margin: auto;
+
 
 }
 
-.review div {
+.review > div {
+ 
   border: 1px solid #000;
   height: 300px;
+ 
   background-color: #ddd;
 }
 
@@ -281,8 +291,6 @@ footer {
   color: black;
 }
 
-@media (max-width: 768px) {
-  .review {
-    width: 100%;
-  }
+
+ 
 }
