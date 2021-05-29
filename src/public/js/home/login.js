@@ -5,9 +5,9 @@ const id = document.querySelector("#id"),
 password = document.querySelector("#password"),
 loginBtn = document.querySelector("#button")
 
-loginBtn.addEventListener("click", login);
+loginBtn.addEventListener("click", logincustom);
 
-function login() {
+function logincustom() {
   const req = {
       id: id.value,
       password: password.value,
@@ -15,7 +15,7 @@ function login() {
 
 
   //API 만들기
-fetch("/login", {
+fetch("/logincustom", {
     method:"POST",
     headers:{
         "Content-Type":"application/json",

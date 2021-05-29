@@ -155,7 +155,7 @@ header.active label[for=trigger] span{
  /* Hamburger menubar */
 .sidebar_1 {
   width: 30%;
-  height: 100vh;
+  height: 300vh;
   background-color: rgb(0, 60, 128);
   opacity: 90%;
   position: fixed;
@@ -169,7 +169,7 @@ header.active label[for=trigger] span{
 }
 .sidebar_2 {
   width: 70%;
-  height: 100vh;
+  height: 300vh;
   background-color: grey;
   opacity: 20%;
   position: fixed;
@@ -197,7 +197,7 @@ input[id=trigger]:checked~.sidebar_2 {
 
 section .backg {
   width: 100%;
-  height: 500px;
+  height: 1000px;
   /* background-color: white; */
   color: black;
   background: url(/img/cupcake-2749204_640.jpg) no-repeat center center;
@@ -325,5 +325,9 @@ footer {
 }
 
 
- 
+ .stopscroll{
+   height: 100%;
+   overflow-y: hidden;
+}
+
 }

@@ -11,7 +11,10 @@ const output={
  login : (req, res) => {
         res.render("home/login");
     },
-register: (req, res) => {
+  logincustom : (req, res) => {
+      res.render("home/logincustom");
+    },
+  register: (req, res) => {
       res.render("home/register");
     },
   bestpd: (req, res) => {
@@ -32,9 +35,9 @@ register: (req, res) => {
 }
 
 const process = {
-    login: async (req, res) => {
+    logincustom: async (req, res) => {
        const user = new User(req.body);
-       const response = await user.login();
+       const response = await user.logincustom();
       return res.json(response);
     },
        register: async (req, res) => {
