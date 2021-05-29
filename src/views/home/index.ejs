@@ -29,14 +29,8 @@
       <body>
       <div class="container">
       <header>
-      <div class="linner">
-      <li><a href="/login">sign in</a></li>
-      <li><a href="/cart">cart</a></li>
-      <li><a href="/orders">orders</a></li>
-      </div>
-      <div class="ginner">
           <!-- Hamburger -->
-          <div class="sidemenu">
+          <!-- <div class="sidemenu">
             <input type="checkbox" id="trigger">
             <label for="trigger">
               <span></span>
@@ -50,23 +44,56 @@
             <div class="sidebar_2">
               <input type="checkbox" id="trigger">
               <label for="trigger">
-              </label>
+              </label> -->
               <!-- onclick="history.go(0)" -->
-            </div>
+            <!-- </div>
           
+          </div> -->
+          <div>
+      <div class="linner">
+      <li><a href="/login">sign in</a></li>
+      <li><a href="/cart">cart</a></li>
+      <li><a href="/orders">orders</a></li>
+      </div>
+      <div class="ginner">
+        <div id="logo">
+         <a href="/"> <img src="/img/tartlogomodf2-01.png" alt=""></a>
+        </div>
+       
+        <div id="nav">
+          <nav>
+          <ul>
+            <!-- Hamburger -->
+            <div class="sidemenu">
+              <input type="checkbox" id="trigger">
+              <label for="trigger">
+                <span></span>
+                <span></span>
+                <span></span>
+            
+              </label>
+              <div class="sidebar_1">
+              </div>
+            
+              <div class="sidebar_2" >
+                <input type="checkbox" id="trigger">
+                <label for="trigger">
+                </label>
+                <!-- onclick="history.go(0)" -->
+              </div>
+            
+            </div>
+          <li><a href="/">Home</a></li>
+          <li><a href="/notice">Notice</a></li>
+          <li><a href="/introduce">Introduce</a></li>
+          <li><a href="/bestpd">Best</a></li>
+          <li><a href="/event">Event</a></li>
+          </ul>
+          </nav>
           </div>
-      <nav>
-      <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/notice">Notice</a></li>
-      <li><a href="/introduce">Introduce</a></li>
-      <li><a href="/bestpd">Best</a></li>
-      <li><a href="/event">Event</a></li>
-      </ul>
-      </nav>
-      </div>
-      </div>
-      </section>
+          </div>
+        </div>
+     
     
       </header>
 
@@ -74,7 +101,7 @@
         <div class="backg">
         </div>
       </section>
-      <section class="main">
+      <div class="main">
         <div id="app">
        <app-header></app-header>
        <app-div></app-div>
@@ -116,7 +143,7 @@
       <footer>
       <div>© 2021 자바를 자바보자 All Rights Reserved</div>
       </footer>
-
+  </div>
 
       <script>
      
@@ -129,7 +156,9 @@
                           }
         ).init();
       </script>
-<!-- btn-top Jquery-->
+
+
+<!-- // btn-top Jquery -->
 <script>
     
       $('header a, a.btn-top').click(function(){
@@ -153,6 +182,17 @@
 
     
 </script>
+<script>
+  $(document).ready(function() {
+    $("input:checkbox").on('click', function(){
+      if ($(this).prop('checked')){
+        $(this).parent().addclass("selected");
+      } else {
+        $(this).parent().removeclass("slected");
+      }
+    });
+  });
+</script>
 <!-- Slick Slider Jquery -->
 <script>
  
@@ -164,7 +204,7 @@
   slidesToShow: 3,
   slidesToScroll: 1,
   autoplay: true,
-  autoplaySpeed: 2500,
+  autoplaySpeed: 1000,
   responsive: [
     {
       breakpoint: 1024,

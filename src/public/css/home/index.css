@@ -8,7 +8,13 @@
     box-sizing: border-box;
     font-family: 'Noto Sans KR', sans-serif;
   }
-
+.container {
+  width:100%;
+  height: 100%;
+  display: flex;
+  flex-direction:column;
+  flex-wrap:nowrap;
+}
   
 [class*=fontawesome-]:before {
     font-family: "FontAwesome", sans-serif;
@@ -17,6 +23,8 @@
 body {
     margin:0;
     font-family: "Raleway", sans-serif;
+    background-color: lemonchiffon;
+  
 }
 
 header {
@@ -27,13 +35,13 @@ header {
   width: 100%;
   top: 0;
   left: 0;
-
 }
 
 header a {
   text-decoration: none;
   font-size: 30px;
-  color: orange;
+  font-weight: bold;
+  color:#E5217D
 
 }
 
@@ -46,6 +54,7 @@ header li {
   display: inline-block;
   padding-left: 50px;
   padding-bottom: 30px;
+
 }
 
 header ul {
@@ -54,21 +63,20 @@ header ul {
 
 .linner,
 .ginner {
-  transition: 0.5s;
+  transition: 0.8s;
 }
 
 .linner {
   background-color: white;
   height: 50px;
   line-height: 50px;
-
 }
 
 .ginner {
 
   background-color: black;
-  height: 80px;
   line-height: 30px;
+  z-index: 30;
 }
 
 header.active .linner {
@@ -78,7 +86,12 @@ header.active .linner {
 
 header.active .ginner {
   background-color: white;
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.548);
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.548);
+  transform: translateY(-210px);
+}
+.ginner img{
+  width: 20%;
+  margin-bottom: -5%;
 }
 
 /* Hamburger button */
@@ -86,7 +99,7 @@ header.active .ginner {
   display: none;
 }
 label[for=trigger] {
-  width: 40px;
+  width: 100px;
   height: 20px;
   display: block;
   position: relative;
@@ -103,25 +116,25 @@ label[for=trigger] span {
   height: 8px;
   background-color: white;
   position: absolute;
-  width: 90px;
+  width: 60px;
   left: 10px;
   transition: 0.3s;
   z-index: 1000;
   padding: 1px;
 }
 label[for=trigger] span:nth-child(1) {
-  top: 120%;
+  top: 80%;
 }
 label[for=trigger] span:nth-child(2) {
-  top: 200%;
+  top: 140%;
 }
 label[for=trigger] span:nth-child(3) {
-  top: 280%;
+  top: 200%;
 }
 /* Sidebar Hamburger lines rotate */
     input[id=trigger]:checked+label span:nth-child(1) {
   transform: rotate(45deg);
-  top: 50%;
+  top: 0%;
   background-color: rgb(80, 80, 80);
 }
 input[id=trigger]:checked+label span:nth-child(2) {
@@ -129,12 +142,15 @@ input[id=trigger]:checked+label span:nth-child(2) {
 }
 input[id=trigger]:checked+label span:nth-child(3) {
   transform: rotate(-45deg);
-  top: 50%;
+  top: 0%;
   background-color: rgb(80, 80, 80);
 }
 input[id=trigger]:checked+label {
   left: 30%;
 } 
+header.active label[for=trigger] span{
+  background-color: black;
+}
 
  /* Hamburger menubar */
 .sidebar_1 {
@@ -149,6 +165,7 @@ input[id=trigger]:checked+label {
   color: black;
   z-index: 800;
   text-align: left;
+ 
 }
 .sidebar_2 {
   width: 70%;
@@ -172,7 +189,11 @@ input[id=trigger]:checked~.sidebar_2 {
   right: 0;
 } 
 
-
+.main{
+  
+  overflow-y: hidden;
+  min-height:2em;
+}
 
 section .backg {
   width: 100%;
@@ -182,7 +203,7 @@ section .backg {
   background: url(/img/cupcake-2749204_640.jpg) no-repeat center center;
   background-size: cover;
   transition: 0.5s;
-  z-index: 1000;
+  /* z-index: 1000; */
   margin-top: 100px;
 }
 
@@ -192,7 +213,7 @@ section .backg {
 }
 
 .parent {
-  border: 1px solid black;
+ 
   width: 100%;
   height: 600px;
   margin: 20% 0%;
@@ -202,24 +223,34 @@ section .backg {
 
 .parent div {
   float: left;
-  border: 3px solid red;
-  width: 50%;
-  height: 600px;
+  width: 700px;
+  height: 500px;
   box-sizing: border-box;
   text-align: center;
   line-height: 200px;
   font-size: 3em;
+  position: relative;
+  z-index: -10;
 }
 
 .left {
   animation: ltr 1s linear both;
-
+  background: url(/img/tartintro.jpg) no-repeat center center;
+  background-size: cover;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 10px lemonchiffon inset;
 }
 
 .right {
   animation: rtl 1s linear both;
+  background: url(/img/tartintro2.jpg) no-repeat center left;
+  background-size: cover;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 10px lemonchiffon inset;
 }
 
+
+/* keyframes로 박스 애니메이션 */
 @keyframes ltr {
   0% {
     opacity: 0;
@@ -240,7 +271,7 @@ section .backg {
 
   100% {
     opacity: 1;
-    transform: translateX(50px);
+    transform: translateX(130px);
   }
 }
 
@@ -269,7 +300,9 @@ footer {
   width: 100%;
   height: 100px;
   margin:0px;
-  background-color: teal;
+  background-color:black;
+  color: aliceblue;
+
 }
 
 .review {
@@ -280,11 +313,11 @@ footer {
 }
 
 .review > div {
- 
-  border: 1px solid #000;
+/*  
+  border: 1px solid #000; */
   height: 300px;
  
-  background-color: #ddd;
+  /* background-color: #ddd; */
 }
 
 .slick-arrow {
