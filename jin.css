@@ -1,0 +1,144 @@
+/*RESET*/
+
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+
+
+
+body {
+
+  font: 17px 'Nanum Gothic', sans-serif;
+
+}
+
+
+
+
+a {
+
+  text-decoration: none;
+
+  color: white;
+
+}
+
+
+
+
+li {
+
+  list-style: none;
+
+}
+
+
+
+
+/*BODY*/
+
+#notice {
+
+  width: 500px;
+
+  margin: 0 auto;
+
+  box-sizing: border-box;
+
+  /*outline: 1px dashed black;*/
+
+}
+
+
+
+
+#notice h1 {
+
+  font-size: 25px;
+
+  text-align: center;
+
+  margin: 10px 180px;
+
+  padding: 10px;
+
+  color: white;
+
+  background: white;
+
+  border-radius: 30px;
+
+}
+
+
+
+
+#notice ul {
+
+  width: 100%;
+
+}
+
+
+
+
+#notice ul li {
+
+  line-height: 30px; /*li 세로 간격*/
+
+  padding-left: 20px;
+
+}
+
+
+
+
+#notice ul li:first-child {
+
+  border-top: 2px solid white;
+
+  border-bottom: 2px solid white;
+
+  padding-left: 150px;
+
+}
+
+
+
+
+#notice ul li:last-child {
+
+  border-bottom: 1px solid white;
+
+}
+
+
+
+
+#notice ul li:nth-child(2n) { 
+
+  background: white;
+
+  border-radius: 20px;
+
+}
+
+
+
+
+#notice ul li span {
+
+  display: inline-block;
+
+  float: right;
+
+  width: 150px;
+
+  text-align: center;
+
+}
