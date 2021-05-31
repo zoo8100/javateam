@@ -1,12 +1,14 @@
   /* Icon Fontawesome&Xeicon */
   @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
   @import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+  @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
   @media(min-width:701px) {
 
   /* Reset CSS */
  * {
     box-sizing: border-box;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    /* font-family: 'Noto Sans KR', sans-serif; */
   }
 .container {
   width:100%;
@@ -22,7 +24,7 @@
 
 body {
     margin:0;
-    font-family: "Raleway", sans-serif;
+    /* font-family: "Raleway", sans-serif; */
     background-color: white;
 }
 
@@ -44,12 +46,13 @@ header {
 header a {
   text-decoration: none;
   font-size: 20px;
-  font-weight: bold;
+  font-family: 'Rajdhani', sans-serif;
   color:#B18760;
 
 }
 header #nav2 a {
   font-size: 25px;
+  font-family: 'Rajdhani', sans-serif;
 }
 
 header a:hover {
@@ -61,6 +64,7 @@ header li {
   display: inline-block;
   padding-left: 50px;
   padding-bottom: 30px;
+  font-family: 'Rajdhani', sans-serif;
 }
 
 header ul {
@@ -73,33 +77,66 @@ header ul {
 }
 
 .linner {
-  background-color: white;
+  background-color:darkslategray;
   height: 50px;
   line-height: 50px;
 }
 
 .ginner {
-
-  background-color: black;
+  width: 100%;
+  background-color: #620015;
   line-height: 30px;
   z-index: 30;
-  display: flex;
-
+  display: inline-flex;
+  padding-left: 6%;
+}
+nav{
+  display: inline-flex;
+  margin-top: 10px;
+  font-family: 'Rajdhani', sans-serif;
+}
+nav div{
+  flex: 1;
+  float: left;
 }
 #nav1{
   flex: 1;
   display: flex;
+  font-weight: 500;
+  line-height: 10px;
 }
 #nav1  div{
-  flex: 1;
+  flex: 2;
   float: left;
   display: inline;
 }
+#nav1 div:nth-child(1) {
+  flex:3;
+}
 #logo{
-  flex: 2;
+  flex: 1;
+  margin-right: 3%;
 }
 #nav2{
   flex: 1;
+  display: flex;
+  margin-left: 6%;
+}
+
+#nav2 div{
+  flex: 1;
+}
+#nav2 li{
+  font-family:'Rajdhani', sans-serif;
+}
+#nav2 .sidemenu{
+  margin-left: -15%;
+}
+
+#mainmenu nav{
+  margin-top: 0px;
+  margin-right: 5%;
+  font-weight: bolder;
 }
 header.active .ginner {
   display: none;
@@ -107,7 +144,6 @@ header.active .ginner {
 }
 
 header.active .linner {
-  background-color: white;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.548);
   transform: translateY(-5px);
 }
@@ -204,10 +240,21 @@ section .backg {
 
   position: absolute;
   top: 50%;
-  left: 25%;
+  left: 30%;
   color: white;
   font-size: 30px;
- 
+}
+#shopnow{
+  position: absolute;
+  top: 75%;
+  left:43%;
+  width: 180px;
+  height: 50px;
+  border-radius: 5px;
+  border-style: none;
+  background-color: #B18760;
+  font-weight: bolder;
+  color: white;
 }
 
 
