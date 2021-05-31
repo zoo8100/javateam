@@ -1,51 +1,261 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <title>공지사항</title>
-  <link rel="stylesheet" href="./css/jin.css">
-  <link rel="stylesheet" href="">
-  <link href="./jin.js">
-  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Java Tart</title>
+  <link rel="stylesheet" href="/css/home/index.css">
+  <link rel="stylesheet" href="/css/home/responsive.css">
+
+  <!-- <script src="/js/home/login.js" defer></script> -->
+  <!-- jQuery-->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.3/jquery.scrollTo.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <!-- Slick.js -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="/css/home/slick.css">
+  <link rel="stylesheet" href="/css/home/slick-theme.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
 </head>
 
+<body id="appBody">
+  <div class="container">
+    <header>
+      <div class="ginner">
+        <div class="nav" id="nav1">
+          <nav>
+            <div>
+              <li><a href="/contact"><i class="xi-call"></i>031 000 1234</a></li>
+            </div>
+            <div>
+              <li style="font-family: 'Rajdhani', sans-serif;"><a href="/delivery"><i class="xi-truck"></i>Delivery</a>
+              </li>
+            </div>
+          </nav>
+        </div>
+        <div id="logo">
+          <a href="/"> <img src="/img/tartlogomodf1-01.png"
+              style="width: 300px; height:200px; object-fit: cover; margin-top: 20px;"";" alt=""></a>
+        </div>
+        <div id="nav2">
+          <nav>
+            <ul>
+              <div>
+                <li><a href="/logincustom" style="font-family:'Rajdhani', sans-serif; font-size: 22px;"><i
+                      class="xi-user"></i>Log In</a></li>
+              </div>
+              <li>
+                <!-- Hamburger -->
+                <div class="sidemenu">
+                  <input type="checkbox" id="trigger" onclick="disableBodyScroll()">
+                  <label for="trigger">
+                    <i class="xi-basket" style="color: #B18760; font-size: 26px;"></i>
+                  </label>
 
-<body>
-  <header>
+                  <div class="sidebar_1">
+                    <input type="checkbox" id="trigger">
+                    <label for="trigger">
+                    </label>
 
-    <nav>
+                  </div>
 
-    </nav>
-  </header>
-  <div id="notice">
+                  <div class="sidebar_2">
+                    <label for="trigger">
+                      <div class="xi-close"></div>
+                    </label>
+                  </div>
 
-    <h1>공지사항</h1>
 
-    <ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="linner">
+        <div class="nav" id="mainmenu">
+          <nav>
+            <ul>
+              <!-- Hamburger -->
+              <!-- <div class="sidemenu">
+              <input type="checkbox" id="trigger" onclick="disableBodyScroll()">
+              <label for="trigger">
+              <i class="xi-truck"></i>
+    
+              </label>
+              <div class="sidebar_1">
+              </div>
+    
+              <div class="sidebar_2">
+                <input type="checkbox" id="trigger">
+                <label for="trigger">
+                </label>
+               
+              </div>
+    
+            </div> -->
+              <div>
+                <li><a href="/">Home</a></li>
+              </div>
+              <div>
+                <li><a href="/notice">Notice</a></li>
+              </div>
+              <div>
+                <li><a href="/introduce">Introduce</a></li>
+              </div>
+              <div>
+                <li><a href="/bestpd">Best</a></li>
+              </div>
+              <div>
+                <li><a href="/event">Event</a></li>
+              </div>
+            </ul>
+          </nav>
+        </div>
 
-      <li>내용<span>날짜</span></li>
+      </div>
+    </header>
+    <div class="main">
+      <section>
+        <div class="backg">
+          <div id="sentence">
+            <h1 style=" font-family: 'Pattaya', sans-serif; font-weight: lighter;">Handmade Tart Online Market No.1</h1>
+          </div>
+          <input type="button" id="shopnow" value="SHOP NOW">
 
-      <li><a href="#">아무거라도 좋으니 내용을 입력하세요!!!</a><span>2021-05-26</span></li>
+        </div>
+      </section>
+      <section>
+        <div id="app">
 
-      <li><a href="#">아무거라도 좋으니 내용을 입력하세요!!!</a><span>2021-05-26</span></li>
+          <div id="article">
+            <h1>자바를 잡아보자 팀의 홈페이지 입니다.</h1>
+            <h2>공지사항, 매장소개, 베스트상품, 이벤트 로 구성될 예정입니다</h2>
 
-      <li><a href="#">아무거라도 좋으니 내용을 입력하세요!!!</a><span>2021-05-26</span></li>
+            <h3>
+              itaque consequatur nihil quasi? Hic perspiciatis provident laboriosam nisi eos pariatur qui similique
+              labore modi error illo, corporis nostrum veniam voluptatum quod corrupti non repellat possimus inventore
+              ducimus, ratione magnam id nam ipsum? Possimus, recusandae? At laudantium, ea quisquam atque aliquam atque
+              necessitatibus temporibus rerum, veniam dolor nisi perspiciatis sed odit officia ad neque voluptate
+              asperiores aliquid exercitationem velit ipsam. Nihil sed odit sunt rem voluptatum molestias omnis
+            </h3>
+          </div>
+          <!-- Moving Box -->
+        </div>
+       
+    </div>
+   
 
-      <li><a href="#">아무거라도 좋으니 내용을 입력하세요!!!</a><span>2021-05-26</span></li>
+    </section>
 
-      <li><a href="#">아무거라도 좋으니 내용을 입력하세요!!!</a><span>2021-05-26</span></li>
+    <div>
 
-      <li><a href="#">아무거라도 좋으니 내용을 입력하세요!!!</a><span>2021-05-26</span></li>
+      <a href="#" class="btn-top"><i class="xi-angle-up"></i></a>
+    </div>
 
-      <li><a href="#">아무거라도 좋으니 내용을 입력하세요!!!</a><span>2021-05-26</span></li>
-
-      <li><a href="#">아무거라도 좋으니 내용을 입력하세요!!!</a><span>2021-05-26</span></li>
-
-    </ul>
-
+    <footer>
+      <div>© 2021 자바를 자바보자 All Rights Reserved</div>
+    </footer>
   </div>
+  </div>
+  <script>
 
+    new WOW(
+      {
+        boxClass: 'wow',
+        offset: 150,
+        mobile: true,
+        live: true
+      }
+    ).init();
+  </script>
+
+
+  <!-- // btn-top Jquery -->
+  <script>
+
+    $('header a, a.btn-top').click(function () {
+      $.scrollTo(this.hash || 0, 900);
+      e.preventDefault();
+    })
+
+      // })
+  </script>
+  <!-- Header btn-top Active Class -->
+  <script>
+
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > 50) {
+        $('header, .btn-top').addClass('active');
+      }
+      else {
+        $('header, .btn-top').removeClass('active');
+      }
+    })
+
+
+  </script>
+  <script>
+    function disableBodyScroll() {
+      const element = document.querySelector("#appBody");
+      element.classList.toggle("stopscroll");
+    }
+
+  </script>
+  <!-- Slick Slider Jquery -->
+  <script>
+
+    $('.review').slick({
+      arrows: true,
+      dots: false,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1000,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: false
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+
+
+  </script>
 </body>
 
 </html>
