@@ -1,0 +1,360 @@
+  /* Icon Fontawesome&Xeicon */
+  @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+  @import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+  @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+  @media(min-width:701px) {
+
+/* Copyright (c) 2021 by Kaushalya R. Mandaliya (https://codepen.io/kman/pen/DFAzG) */
+[class*=fontawesome-]:before {
+    font-family: "FontAwesome", sans-serif;
+}
+
+/* body {
+    background: -owg-linear-gradient(left, #272838, #2b2d41, #393549, #433545);
+    background: -webkit-linear-gradient(left, #272838, #2b2d41, #393549, #433545);
+    background: -moz-linear-gradient(left, #272838, #2b2d41, #393549, #433545);
+    background: -o-linear-gradient(left, #272838, #2b2d41, #393549, #433545);
+    background: linear-gradient(left, #272838, #2b2d41, #393549, #433545);
+    font-family: "Raleway", sans-serif;
+} */
+
+ 
+  @media(min-width:701px) {
+
+  /* Reset CSS */
+  * {
+    box-sizing: border-box;
+    font-family: 'Rajdhani', sans-serif;
+  }
+.container {
+  width:100%;
+  height: 100%;
+  display: flex;
+  flex-direction:column;
+  flex-wrap:nowrap;
+}
+  
+[class*=fontawesome-]:before {
+    font-family: "FontAwesome", sans-serif;
+}
+
+body {
+    margin:0;
+    /* font-family: "Raleway", sans-serif; */
+    background-color: white;
+    overflow: hidden;
+}
+
+.stopscroll{
+  margin: 0;
+  overflow: hidden;
+}
+
+header {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+header a {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Rajdhani', sans-serif;
+  color:#B18760;
+
+}
+header #nav2 a {
+  font-size: 25px;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+header a:hover {
+  font-weight: bold;
+  text-shadow: 2px 2px 3px rgb(17, 226, 164);
+}
+
+header li {
+  display: inline-block;
+  padding-left: 50px;
+  padding-bottom: 30px;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+header ul {
+  margin: 0px;
+}
+
+.linner,
+.ginner {
+  transition: 0.8s;
+}
+
+.linner {
+  background-color:darkslategray;
+  height: 50px;
+  line-height: 50px;
+}
+
+.ginner {
+  width: 100%;
+  background-color: #620015;
+  line-height: 30px;
+  z-index: 30;
+  display: inline-flex;
+  padding-left: 6%;
+}
+nav{
+  display: inline-flex;
+  margin-top: 10px;
+  font-family: 'Rajdhani', sans-serif;
+}
+nav div{
+  flex: 1;
+  float: left;
+}
+#nav1{
+  flex: 1;
+  display: flex;
+  font-weight: 500;
+  line-height: 10px;
+}
+#nav1  div{
+  flex: 2;
+  float: left;
+  display: inline;
+}
+#nav1 div:nth-child(1) {
+  flex:3;
+}
+#logo{
+  flex: 1;
+  margin-right: 3%;
+}
+#nav2{
+  flex: 1;
+  display: flex;
+  margin-left: 6%;
+}
+
+#nav2 div{
+  flex: 1;
+}
+#nav2 li{
+  font-family:'Rajdhani', sans-serif;
+}
+#nav2 .sidemenu{
+  margin-left: -15%;
+}
+
+#mainmenu nav{
+  margin-top: 0px;
+  margin-right: 5%;
+  font-weight: bolder;
+}
+header.active .ginner {
+  display: none;
+
+}
+
+header.active .linner {
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.548);
+  transform: translateY(-5px);
+}
+.ginner img{
+  width: 20%;
+  margin-bottom: -5%;
+}
+
+/* Hamburger button */
+   input[id=trigger] {
+  display: none;
+}
+label[for=trigger] {
+  width: 100px;
+  height: 20px;
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+.sidebar_1 label {
+  width: 100%;
+  height: 100%;
+  cursor: default;
+}
+
+
+
+ /* Hamburger menubar */
+.sidebar_1 {
+  width: 75%;
+  height: 300vh;
+  background-color: grey;
+  opacity: 10%;
+  position: fixed;
+  top: 0;
+  left: -75%;
+  transition: 0.0001s;
+  color: black;
+  z-index: 800;
+  text-align: left;
+ 
+}
+.sidebar_2 {
+  width: 25%;
+  height: 300vh;
+  background-color: white;
+  opacity: 100%;
+  position: fixed;
+  top: 0;
+  right: -25%;
+  z-index: 900;
+  transition: 0.5s;
+  color: black;
+}
+
+.xi-close{
+  font-size: 26px;
+  float: right;
+  margin-top: 20px;
+  margin-right: 30px;
+  color: darkslategrey;
+}
+
+    
+input[id=trigger]:checked~.sidebar_1 {
+  left: 0;
+}
+input[id=trigger]:checked~.sidebar_2 {
+  right: 0;
+} 
+
+
+footer {
+  width: 100%;
+  height: 50px;
+  background-color:black;
+  color: aliceblue;
+
+}
+
+
+ 
+
+}
+
+form#register-form {
+   
+    width: 40em;
+    margin: 220px auto 5px;
+    overflow: hidden;
+    position: relative;
+    left: 10%;
+    -webkit-border-radius: 0.3em;
+    -moz-border-radius: 0.3em;
+    -ms-border-radius: 0.3em;
+    -o-border-radius: 0.3em;
+    border-radius: 0.3em;
+    /* -webkit-box-shadow: 0 0 0.2em #000;
+    -moz-box-shadow: 0 0 0.2em #000;
+    box-shadow: 0 0 0.2em #000; */
+    /* position: relative;
+    z-index: -1; */
+}
+
+
+
+form#register-form div.idps {
+    width: 45%;
+    /* float: left; */
+    padding: 1em 1em 0.5em 1.5em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-color: grey;
+    border-style: dotted;
+    margin-top: 7%;
+}
+
+
+form#register-form:before,
+form#register-form:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
+div.idps label {
+    display: inline-block;
+    color: gray;
+    font-size: 1.1em;
+}
+
+div.idps input[type=text],
+div.idps input[type=password] {
+    border: 0.1em solid #dfdfdf;
+    padding: 1em;
+    margin: 0.6em 0;
+    max-width: 88.5%;
+    -webkit-border-radius: 0.2em;
+    -moz-border-radius: 0.2em;
+    -ms-border-radius: 0.2em;
+    -o-border-radius: 0.2em;
+    border-radius: 0.2em;
+    -webkit-box-shadow: 0 0 0.2em rgba(223, 223, 223, 0.2);
+    -moz-box-shadow: 0 0 0.2em rgba(223, 223, 223, 0.2);
+    box-shadow: 0 0 0.2em rgba(223, 223, 223, 0.2);
+    -webkit-transition: 0.15s all ease-in-out;
+    -moz-transition: 0.15s all ease-in-out;
+    -o-transition: 0.15s all ease-in-out;
+    transition: 0.15s all ease-in-out;
+}
+
+div.idps input[type=text]:focus,
+div.idps input[type=password]:focus {
+    outline: none;
+    border: 0.1em solid #919191;
+    left: 10%;
+}
+
+div.idps #button {
+    background: #B18760;
+    color: #fff;
+    outline: none;
+    text-transform: uppercase;
+    padding: 1.2em;
+    width: 65%;
+    height: 10%;
+    overflow: hidden;
+    border: none;
+    letter-spacing: 0.1em;
+    margin: 0.5em;
+    font-weight: bold;
+    -webkit-border-radius: 0.3em;
+    -moz-border-radius: 0.3em;
+    -ms-border-radius: 0.3em;
+    -o-border-radius: 0.3em;
+    border-radius: 0.3em;
+    -webkit-transition: 0.15s all ease-in-out;
+    -moz-transition: 0.15s all ease-in-out;
+    -o-transition: 0.15s all ease-in-out;
+    transition: 0.15s all ease-in-out;
+}
+
+div.idps #button:hover {
+    background: #620015;
+}
+
+div.idps .message{
+  font-weight: bolder;
+}
+
+
+  }

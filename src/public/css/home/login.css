@@ -1,3 +1,9 @@
+  /* Icon Fontawesome&Xeicon */
+  @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+  @import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+  @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+  @media(min-width:701px) {
+
 /* Copyright (c) 2021 by Kaushalya R. Mandaliya (https://codepen.io/kman/pen/DFAzG) */
 [class*=fontawesome-]:before {
     font-family: "FontAwesome", sans-serif;
@@ -12,15 +18,13 @@
     font-family: "Raleway", sans-serif;
 } */
 
-  /* Icon Fontawesome&Xeicon */
-  @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-  @import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+ 
   @media(min-width:701px) {
 
   /* Reset CSS */
   * {
     box-sizing: border-box;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
   }
 .container {
   width:100%;
@@ -36,8 +40,13 @@
 
 body {
     margin:0;
-    font-family: "Raleway", sans-serif;
-    background-color: lemonchiffon;
+    /* font-family: "Raleway", sans-serif; */
+    background-color: white;
+    overflow: hidden;
+}
+
+.stopscroll{
+  margin: 0;
   overflow: hidden;
 }
 
@@ -53,10 +62,14 @@ header {
 
 header a {
   text-decoration: none;
-  font-size: 30px;
-  font-weight: bold;
+  font-size: 20px;
+  font-family: 'Rajdhani', sans-serif;
   color:#B18760;
 
+}
+header #nav2 a {
+  font-size: 25px;
+  font-family: 'Rajdhani', sans-serif;
 }
 
 header a:hover {
@@ -68,7 +81,7 @@ header li {
   display: inline-block;
   padding-left: 50px;
   padding-bottom: 30px;
-
+  font-family: 'Rajdhani', sans-serif;
 }
 
 header ul {
@@ -81,27 +94,75 @@ header ul {
 }
 
 .linner {
-  background-color: white;
+  background-color:darkslategray;
   height: 50px;
   line-height: 50px;
 }
 
 .ginner {
-
-  background-color: black;
+  width: 100%;
+  background-color: #620015;
   line-height: 30px;
   z-index: 30;
+  display: inline-flex;
+  padding-left: 6%;
+}
+nav{
+  display: inline-flex;
+  margin-top: 10px;
+  font-family: 'Rajdhani', sans-serif;
+}
+nav div{
+  flex: 1;
+  float: left;
+}
+#nav1{
+  flex: 1;
+  display: flex;
+  font-weight: 500;
+  line-height: 10px;
+}
+#nav1  div{
+  flex: 2;
+  float: left;
+  display: inline;
+}
+#nav1 div:nth-child(1) {
+  flex:3;
+}
+#logo{
+  flex: 1;
+  margin-right: 3%;
+}
+#nav2{
+  flex: 1;
+  display: flex;
+  margin-left: 6%;
 }
 
-header.active .linner {
+#nav2 div{
+  flex: 1;
+}
+#nav2 li{
+  font-family:'Rajdhani', sans-serif;
+}
+#nav2 .sidemenu{
+  margin-left: -15%;
+}
+
+#mainmenu nav{
+  margin-top: 0px;
+  margin-right: 5%;
+  font-weight: bolder;
+}
+header.active .ginner {
   display: none;
 
 }
 
-header.active .ginner {
-  background-color: white;
+header.active .linner {
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.548);
-  transform: translateY(-210px);
+  transform: translateY(-5px);
 }
 .ginner img{
   width: 20%;
@@ -118,84 +179,52 @@ label[for=trigger] {
   display: block;
   position: relative;
   cursor: pointer;
-  transition: 0.3s;
 }
-.sidebar_2 label {
+.sidebar_1 label {
   width: 100%;
   height: 100%;
+  cursor: default;
 }
-label[for=trigger] span {
-  display: block;
-  border-radius: 10%;
-  height: 8px;
-  background-color: white;
-  position: absolute;
-  width: 60px;
-  left: 10px;
-  transition: 0.3s;
-  z-index: 1000;
-  padding: 1px;
-}
-label[for=trigger] span:nth-child(1) {
-  top: 80%;
-}
-label[for=trigger] span:nth-child(2) {
-  top: 140%;
-}
-label[for=trigger] span:nth-child(3) {
-  top: 200%;
-}
-/* Sidebar Hamburger lines rotate */
-    input[id=trigger]:checked+label span:nth-child(1) {
-  transform: rotate(45deg);
-  top: 0%;
-  background-color: rgb(80, 80, 80);
-}
-input[id=trigger]:checked+label span:nth-child(2) {
-  opacity: 0;
-}
-input[id=trigger]:checked+label span:nth-child(3) {
-  transform: rotate(-45deg);
-  top: 0%;
-  background-color: rgb(80, 80, 80);
-}
-input[id=trigger]:checked+label {
-  left: 30%;
-} 
-header.active label[for=trigger] span{
-  background-color: black;
-}
+
+
 
  /* Hamburger menubar */
 .sidebar_1 {
-  width: 30%;
+  width: 75%;
   height: 300vh;
-  background-color: rgb(0, 60, 128);
-  opacity: 90%;
+  background-color: grey;
+  opacity: 10%;
   position: fixed;
   top: 0;
-  left: -30%;
-  transition: 0.5s;
+  left: -75%;
+  transition: 0.0001s;
   color: black;
   z-index: 800;
   text-align: left;
  
 }
 .sidebar_2 {
-  width: 70%;
+  width: 25%;
   height: 300vh;
-  background-color: grey;
-  opacity: 20%;
+  background-color: white;
+  opacity: 100%;
   position: fixed;
   top: 0;
-  right: -70%;
+  right: -25%;
   z-index: 900;
   transition: 0.5s;
   color: black;
 }
- 
 
+.xi-close{
+  font-size: 26px;
+  float: right;
+  margin-top: 20px;
+  margin-right: 30px;
+  color: darkslategrey;
+}
 
+    
 input[id=trigger]:checked~.sidebar_1 {
   left: 0;
 }
@@ -204,11 +233,9 @@ input[id=trigger]:checked~.sidebar_2 {
 } 
 
 
-
 footer {
   width: 100%;
   height: 50px;
-  margin:0px;
   background-color:black;
   color: aliceblue;
 
@@ -222,9 +249,10 @@ footer {
 form#login-form {
     background: #fff;
     width: 40em;
-    margin: 320px auto 0px;
+    margin: 300px auto 40px;
     overflow: hidden;
     position: relative;
+    left: 10%;
     -webkit-border-radius: 0.3em;
     -moz-border-radius: 0.3em;
     -ms-border-radius: 0.3em;
@@ -246,6 +274,9 @@ form#login-form div.idps {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    border-color: grey;
+    border-style: dotted;
+    
 }
 
 
@@ -291,25 +322,27 @@ div.idps input[type=text]:focus,
 div.idps input[type=password]:focus {
     outline: none;
     border: 0.1em solid #919191;
+    left: 10%;
 }
 
 div.idps #button {
-    background: #f85f64;
+    background: #B18760;
     color: #fff;
     outline: none;
     text-transform: uppercase;
     padding: 1.2em;
     width: 65%;
+    height: 10%;
     overflow: hidden;
     border: none;
     letter-spacing: 0.1em;
-    margin: 0.5em 0;
+    margin: 0.5em;
     font-weight: bold;
-    -webkit-border-radius: 0.4em;
-    -moz-border-radius: 0.4em;
-    -ms-border-radius: 0.4em;
-    -o-border-radius: 0.4em;
-    border-radius: 0.4em;
+    -webkit-border-radius: 0.3em;
+    -moz-border-radius: 0.3em;
+    -ms-border-radius: 0.3em;
+    -o-border-radius: 0.3em;
+    border-radius: 0.3em;
     -webkit-transition: 0.15s all ease-in-out;
     -moz-transition: 0.15s all ease-in-out;
     -o-transition: 0.15s all ease-in-out;
@@ -317,9 +350,12 @@ div.idps #button {
 }
 
 div.idps #button:hover {
-    background: rgba(248, 95, 100, 0.8);
+    background: #620015;
+}
+
+div.idps .message{
+  font-weight: bolder;
 }
 
 
-
-
+  }
