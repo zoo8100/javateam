@@ -9,6 +9,7 @@
   },
   "scripts": {
     "start": "node ./bin/www.js",
+    "heroku-postbuild":"npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -26,6 +27,10 @@
     "nodeQuery": "*",
     "vue": "^2.6.12"
   },
+  "engines":{
+    "node":"v14.16.1",
+    "npm":"7.12.0"
+},
   "devDependencies": {
     "expose-loader": "^3.0.0"
   }
