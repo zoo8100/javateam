@@ -1,6 +1,6 @@
 
 
-const port = process.env.PORT;
+const port = (process.env.PORT || 5000);
 const http =require("http");
 const app= http.createServer((req, res) => {
     console.log(req.url);
