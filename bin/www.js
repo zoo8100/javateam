@@ -3,10 +3,10 @@
 const app = require("../app");
 
 
-const PORT = 3001;
+const port = process.env.PORT
 
 
-app.listen(PORT, () => {
+app.listen(port, () => {
     console.log("서버 가동");
 }
 )
