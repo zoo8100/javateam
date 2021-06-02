@@ -1,15 +1,14 @@
 {
   "name": "login-page",
   "version": "1.0.0",
-  "description": "",
+  "description": "��#\u0000 \u0000j\u0000a\u0000v\u0000a\u0000t\u0000e\u0000a\u0000m\u0000\r\u0000 \u0000",
   "main": "app.js",
-
   "bin": {
     "login-page": "www.js"
   },
   "scripts": {
     "start": "node ./bin/www.js",
-    "heroku-postbuild":"npm run build",
+    "heroku-postbuild": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -27,11 +26,19 @@
     "nodeQuery": "*",
     "vue": "^2.6.12"
   },
-  "engines":{
-    "node":"14.16.1",
-    "npm":"7.15.1"
-},
+  "engines": {
+    "node": "14.16.1",
+    "npm": "7.15.1"
+  },
   "devDependencies": {
     "expose-loader": "^3.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zoo8100/javateam.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zoo8100/javateam/issues"
+  },
+  "homepage": "https://github.com/zoo8100/javateam#readme"
 }
