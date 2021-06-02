@@ -23,93 +23,170 @@
       <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
       <link rel="stylesheet" href="/css/home/slick.css">
       <link rel="stylesheet" href="/css/home/slick-theme.css">
-   
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
       </head>
      
-      <body>
-      <div class="container">
-      <header>
-      <div class="linner">
-      <li><a href="/login">log in</a></li>
-      <li><a href="/register"></a></li>
-      <li><a href="/mypage"></a></li>
-      <li><a href="/cart"></a></li>
-      <li><a href="/orders"></a></li>
-      </div>
+      <body id="appBody"> 
+  <div class="container">
+    <header>
       <div class="ginner">
-      <nav>
-      <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/notice">Notice</a></li>
-      <li><a href="/introduce">Introduce</a></li>
-      <li><a href="/bestpd">Best</a></li>
-      <li><a href="/event">Event</a></li>
-      </ul>
-      </nav>
+      <div class="nav" id="nav1">
+          <nav>
+          <div>
+             <li><a href="/contact"><i class="xi-call"></i>031 000 1234</a></li>
+            </div>
+            <div>
+             <li style="font-family: 'Rajdhani', sans-serif;"><a href="/delivery" ><i class="xi-truck" ></i>Delivery</a></li>
+            </div>
+          </nav>
       </div>
-      </div>
-      </section>
-      <!-- Hamburger -->
-      <div class="sidemenu">
-          <input type="checkbox" id="trigger">
-          <label for="trigger">
-            <span></span>
-            <span></span>
-            <span></span>
-         
-          </label>
-          <div class="sidebar_1">
+        <div id="logo">
+          <a href="/"> <img src="/img/tartlogomodf1-01.png" style="width: 300px; height:200px; object-fit: cover; margin-top: 20px;"";" alt=""></a>
+        </div>
+          <div id="nav2">
+          <nav>
+            <ul>
+              <div>
+                <li><a href="/logincustom" style="font-family:'Rajdhani', sans-serif; font-size: 22px;"><i class="xi-user"></i>Log In</a></li>
+                </div>
+                <li>
+                  <!-- Hamburger -->
+                  <div class="sidemenu">
+                    <input type="checkbox" id="trigger" onclick="disableBodyScroll()">
+                    <label for="trigger">
+                      <i class="xi-basket"  style="color: #B18760; font-size: 26px;"></i>
+                    </label>
+
+                    <div class="sidebar_1">
+                      <input type="checkbox" id="trigger">
+                      <label for="trigger">
+                      </label>
+                  
+                    </div>
+                 
+                    <div class="sidebar_2">
+                        <label for="trigger"> <div class="xi-close"></div></label>
+                    </div>
+                  
+                  
+                  </div>
+                </li>
+            </ul>
+          </nav>
           </div>
-          
-          <div class="sidebar_2">
-            <input type="checkbox" id="trigger">
-          <label for="trigger">
-          </label>
-      <!-- onclick="history.go(0)" -->
+      </div>
+    <div class="linner">
+      <div class="nav" id="mainmenu">
+        <nav>
+          <ul>
+            <!-- Hamburger -->
+            <!-- <div class="sidemenu">
+              <input type="checkbox" id="trigger" onclick="disableBodyScroll()">
+              <label for="trigger">
+              <i class="xi-truck"></i>
+    
+              </label>
+              <div class="sidebar_1">
+              </div>
+    
+              <div class="sidebar_2">
+                <input type="checkbox" id="trigger">
+                <label for="trigger">
+                </label>
+               
+              </div>
+    
+            </div> -->
+            <div>
+              <li><a href="/">Home</a></li>
+            </div>
+            <div>
+              <li><a href="/notice">Notice</a></li>
+            </div>
+            <div>
+              <li><a href="/introduce">Introduce</a></li>
+            </div>
+            <div>
+              <li><a href="/bestpd">Best</a></li>
+            </div>
+            <div>
+              <li><a href="/event">Event</a></li>
+            </div>
+          </ul>
+        </nav>
       </div>
     
-      </div>
-      </header>
+    </div>
+</header>
+<div class="main">
+        <section>
+          <div class="backg">
+            <div id="sentence" ><h1 style=" font-family: 'Pattaya', sans-serif; font-weight: lighter;">Handmade Tart Online Market No.1</h1></div>
+            <input  id="shopnow" value="SHOP NOW"  type="button">
 
-      <section>
-      <div class="backg">
-
-      dddd
-      </div>
-
+        </div>
       </section>
-      <section id="main">
-      <div id="app">
-       <app-header></app-header>
-       <app-div></app-div>
-      
+  <section>
+    <div id="app">
+    
+      <div id="article">
       <h1>자바를 잡아보자 팀의 홈페이지 입니다.</h1>
       <h2>공지사항, 매장소개, 베스트상품, 이벤트 로 구성될 예정입니다</h2>
 
       <h3>
       itaque consequatur nihil quasi? Hic perspiciatis provident laboriosam nisi eos pariatur qui similique labore modi error illo, corporis nostrum veniam voluptatum quod corrupti non repellat possimus inventore ducimus, ratione magnam id nam ipsum? Possimus, recusandae? At laudantium, ea quisquam atque  aliquam atque necessitatibus temporibus rerum, veniam dolor nisi perspiciatis sed odit officia ad neque voluptate asperiores aliquid exercitationem velit ipsam. Nihil sed odit sunt rem voluptatum molestias omnis 
       </h3>
+      </div>
       <!-- Moving Box -->
       </div>
       <div class="parent">
-      <div class="left wow"></div>
-      <div class="right wow"></div>
+      <div class="left wow"><img src="/img/newimage5.jpg" alt=""></div>
+      <div class="right wow"><img src="/img/newimage4.jpg" alt=""></div>
       </div>
       </div>
       <!-- Slick Slider -->
       <div class="review">
-      <div>your content</div>
-      <div>your content</div>
-      <div>your content</div>
-      <div>your content</div>
-      <div>your content</div>
-      <div>your content</div>
-      <div>your content</div>
-      <div>your content</div>
+      <div>
+        <img src="/img/cake-3669167_640.jpg" alt="">
+      </div>
+      <div>
+        <img src="/img/food-2822467_640.jpg" alt="">
+      </div>
+      <div>
+        <img src="/img/tart-1283822_640.jpg" alt="">
+      </div>
+      <div>
+        <img src="/img/tart-351951_640.jpg" alt="">
+      </div>
+      <div>
+        <img src="/img/dessert-5712284_640.jpg" alt="">
+      </div>
+      <div>
+        <img src="/img/cake-1086875_640.jpg" alt="">
+      </div>
+      <div>
+        <img src="/img/cake-3669167_640.jpg" alt="">
+      </div>
+      <div>
+        <img src="/img/food-2822467_640.jpg" alt="">
+      </div>
+      <div>
+        <img src="/img/tart-1283822_640.jpg" alt="">
+      </div>
+      <div>
+        <img src="/img/tart-351951_640.jpg" alt="">
+      </div>
+      <div>
+        <img src="/img/dessert-5712284_640.jpg" alt="">
+      </div>
+      <div>
+        <img src="/img/cake-1086875_640.jpg" alt="">
+      </div>
  
       </div>
 
-      </section>
+</section>
 
       <div>
 
@@ -119,8 +196,8 @@
       <footer>
       <div>© 2021 자바를 자바보자 All Rights Reserved</div>
       </footer>
-
-
+  </div>
+</div>
       <script>
      
         new WOW(
@@ -132,7 +209,18 @@
                           }
         ).init();
       </script>
-<!-- btn-top Jquery-->
+<script>
+
+   function closed() {
+      const element = document.querySelector(".main");
+      element.addEventListener('click',function(){
+        window.alert('서비스 준비중 입니다.');
+      })
+    }
+  
+</script>
+
+<!-- // btn-top Jquery -->
 <script>
     
       $('header a, a.btn-top').click(function(){
@@ -156,26 +244,34 @@
 
     
 </script>
+<script>
+  function disableBodyScroll() {
+      const element = document.querySelector("#appBody");
+      element.classList.toggle("stopscroll");
+    }
+  
+
+</script>
 <!-- Slick Slider Jquery -->
 <script>
  
     $('.review').slick({
         arrows: true,
-  dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2500,
-  responsive: [
-    {
+        dots:false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        responsive: [
+       {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 3,
         infinite: true,
-        dots: true
+        dots: false
       }
     },
     {
@@ -200,26 +296,5 @@
 
 
     </script>
-    <!-- < src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></>
-  <>
-    Vue.component('app-header', {
-      template:' <h1>Header</h1>'
-    })
-
-    Vue.component('app-div', {
-      template:'<div>content</div>'
-    })
-  new Vue({
-      el: '#app',
-      components: {
-        'app-footer': {
-          template: '<footer>footer</footer>'
-        }
-      }
-  })
-  </> -->
-
-
-
       </body>
       </html>

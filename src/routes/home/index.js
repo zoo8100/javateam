@@ -13,8 +13,9 @@ router.get("/event", ctrl.output.event);
 router.get("/introduce", ctrl.output.introduce);
 router.get("/notice", ctrl.output.notice);
 router.get("/jin", ctrl.output.jin);
+router.get("/logincustom", ctrl.output.logincustom);
 
-router.post("/login", ctrl.process.login);
+router.post("/logincustom", ctrl.process.logincustom);
 router.post("/register", ctrl.process.register);
 
 module.exports = router;

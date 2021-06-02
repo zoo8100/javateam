@@ -6,54 +6,146 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Java Tart</title>
-    <link rel="stylesheet" href="/css/home/login.css">
-    <link rel="stylesheet" href="/css/responsive.css">
-    <script src="/js/home/register.js" defer></script>
-    <!-- jQuery CDN -->
-    
+    <link rel="stylesheet" href="/css/home/register.css">
 
-  
-    
+    <link rel="stylesheet" href="/css/home/responsive.css">
+    <script src="/js/home/login.js" defer></script>
+
 </head>
 
-<body>
+<body id="appBody">
     <div class="container">
         <header>
-            <div class="linner">linner</div>
             <div class="ginner">
-                <nav>
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/notice">Notice</a></li>
-                        <li><a href="/introduce">Introduce</a></li>
-                        <li><a href="/bestpd">Best</a></li>
-                        <li><a href="/event">Event</a></li>
-                    </ul>
-                </nav>
+                <div class="nav" id="nav1">
+                    <nav>
+                        <div>
+                            <li><a href="/contact"><i class="xi-call"></i>031 000 1234</a></li>
+                        </div>
+                        <div>
+                            <li style="font-family: 'Rajdhani', sans-serif;"><a href="/delivery"><i
+                                        class="xi-truck"></i>Delivery</a></li>
+                        </div>
+                    </nav>
+                </div>
+                <div id="logo">
+                    <a href="/"> <img src="/img/tartlogomodf1-01.png"
+                            style="width: 300px; height:200px; object-fit: cover; margin-top: 20px;"";" alt=""></a>
+                </div>
+                <div id="nav2">
+                    <nav>
+                        <ul>
+                            <div>
+                                <li><a href="/logincustom"
+                                        style="font-family:'Rajdhani', sans-serif; font-size: 22px;"><i
+                                            class="xi-user"></i>Log In</a></li>
+                            </div>
+                            <li>
+                                <!-- Hamburger -->
+                                <div class="sidemenu">
+                                    <input type="checkbox" id="trigger" onclick="disableBodyScroll()">
+                                    <label for="trigger">
+                                        <i class="xi-basket" style="color: #B18760; font-size: 26px;"></i>
+                                    </label>
+
+                                    <div class="sidebar_1">
+                                        <input type="checkbox" id="trigger">
+                                        <label for="trigger">
+                                        </label>
+
+                                    </div>
+
+                                    <div class="sidebar_2">
+                                        <label for="trigger">
+                                            <div class="xi-close"></div>
+                                        </label>
+                                    </div>
+
+
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="linner">
+                <div class="nav" id="mainmenu">
+                    <nav>
+                        <ul>
+                            <!-- Hamburger -->
+                            <!-- <div class="sidemenu">
+                    <input type="checkbox" id="trigger" onclick="disableBodyScroll()">
+                    <label for="trigger">
+                    <i class="xi-truck"></i>
+          
+                    </label>
+                    <div class="sidebar_1">
+                    </div>
+          
+                    <div class="sidebar_2">
+                      <input type="checkbox" id="trigger">
+                      <label for="trigger">
+                      </label>
+                     
+                    </div>
+          
+                  </div> -->
+                            <div>
+                                <li><a href="/">Home</a></li>
+                            </div>
+                            <div>
+                                <li><a href="/notice">Notice</a></li>
+                            </div>
+                            <div>
+                                <li><a href="/introduce">Introduce</a></li>
+                            </div>
+                            <div>
+                                <li><a href="/bestpd">Best</a></li>
+                            </div>
+                            <div>
+                                <li><a href="/event">Event</a></li>
+                            </div>
+                        </ul>
+                    </nav>
+                </div>
+
             </div>
         </header>
 
-        <!-- <input id="id" type="text" placeholder="아이디"><br>
-<input id="password" type="text" placeholder="비밀번호"><br>
-<button>로그인</button> -->
-        <form action="#" id="login-form">
-            <div class="heading">Login to Everdwell</div>
-            <div class="left">
-                <label for="text">ID</label> <br />
-                <input type="text" name="text" id="id" placeholder="아이디" /> <br />
-                <label for="text">Name</label> <br />
-                <input type="text"  id="name" placeholder="이름" /> <br />
-                <label for="password">Password</label> <br />
-                <input type="password" name="password" id="password" placeholder="비밀번호" /> <br />
-                <input type="password" name="password" id="confirm-psword" placeholder="비밀번호 확인" /> <br />
-                <p id="button">SIGN UP</p>
-                <p class="message">Already registered? <a href="/login">log in</a> </p>
+        <section>
+            <div class="backg">
             </div>
-           
-        </form>
+        </section>
+        <div class="main">
+            <!-- <input id="id" type="text" placeholder="아이디"><br>
+      <input id="password" type="text" placeholder="비밀번호"><br>
+      <button>로그인</button> -->
+            <form action="#" id="register-form">
+                <div class="idps">
+                    <label for="text">ID</label> <br />
+                    <input type="text" name="text" id="id" placeholder="아이디" /> <br />
+                    <label for="text">Name</label> <br />
+                    <input type="text" id="name" placeholder="이름" /> <br />
+                    <label for="password">Password</label> <br />
+                    <input type="password" name="password" id="password" placeholder="비밀번호" /> <br />
+                    <input type="password" name="password" id="confirm-psword" placeholder="비밀번호 확인" /> <br />
+                    <p id="button">SIGN UP</p>
+                    <p class="message">Already registered? <a href="/login">log in</a> </p>
+                </div>
+            
+            </form>
+            <footer>
+                <div>© 2021 자바를 자바보자 All Rights Reserved</div>
+            </footer>
+        </div>
+
+
+
 </body>
 
 </html>
+
+
 
 <!-- Copyright (c) 2021 by Kaushalya R. Mandaliya (https://codepen.io/kman/pen/DFAzG)
 
