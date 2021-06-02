@@ -7,6 +7,8 @@ loginBtn = document.querySelector("#button")
 
 loginBtn.addEventListener("click", logincustom);
 
+
+
 function logincustom() {
   const req = {
       id: id.value,
@@ -34,6 +36,6 @@ fetch("/logincustom", {
         console.error(new Error("로그인 중 에러가 발생하였습니다."));
     });
 }
-
+module.exports = id;
 
  
