@@ -262,7 +262,7 @@ section .backg {
 
 #article {
   line-height: 90px;
-  margin:10%;
+  margin: auto 10%;
 
 }
 
@@ -270,7 +270,6 @@ section .backg {
  
   width: 100%;
   height: 600px;
-  margin: 20% 0%;
   overflow: hidden;
 
 }
