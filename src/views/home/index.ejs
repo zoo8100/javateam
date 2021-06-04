@@ -18,6 +18,7 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.3/jquery.scrollTo.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js"></script>  
       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      
   
       <!-- Slick.js -->
       <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
@@ -80,24 +81,6 @@
       <div class="nav" id="mainmenu">
         <nav>
           <ul>
-            <!-- Hamburger -->
-            <!-- <div class="sidemenu">
-              <input type="checkbox" id="trigger" onclick="disableBodyScroll()">
-              <label for="trigger">
-              <i class="xi-truck"></i>
-    
-              </label>
-              <div class="sidebar_1">
-              </div>
-    
-              <div class="sidebar_2">
-                <input type="checkbox" id="trigger">
-                <label for="trigger">
-                </label>
-               
-              </div>
-    
-            </div> -->
             <div>
               <li><a href="/">Home</a></li>
             </div>
@@ -120,13 +103,21 @@
     </div>
 </header>
 <div class="main">
-        <section>
+        <div>
           <div class="backg">
-            <div id="sentence" ><h1 style=" font-family: 'Pattaya', sans-serif; font-weight: lighter;">Handmade Tart Online Market No.1</h1></div>
-            <input  id="shopnow" value="SHOP NOW"  type="button">
+          </div>
+          <div id="sentence" ><h1 style=" font-family: 'Pattaya', sans-serif; font-weight: lighter;">Handmade Tart Online Market No.1</h1></div>
+         <div id="shopnow">
+          <a href="" role="button" onclick="closed()">
+          <span class="button-content-wrapper">
+            <span class="button-text">
+              SHOP NOW
+            </span>
+          </span>
+          </a>
 
         </div>
-      </section>
+      </div>
   <section>
     <div id="app">
     
@@ -198,7 +189,14 @@
       </footer>
   </div>
 </div>
+<script >
+  function closed(){
+    
+    alert("서비스 준비중입니다.");
+      
+    }
 
+</script>
       <script>
      
         new WOW(
@@ -210,16 +208,7 @@
                           }
         ).init();
       </script>
-<script>
 
-   function closed() {
-      const element = document.querySelector(".main");
-      element.addEventListener('click',function(){
-        window.alert('서비스 준비중 입니다.');
-      })
-    }
-  
-</script>
 
 <!-- // btn-top Jquery -->
 <script>
@@ -297,5 +286,6 @@
 
 
     </script>
+   
       </body>
       </html>
