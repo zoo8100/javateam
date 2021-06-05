@@ -41,7 +41,7 @@
 body {
     margin:0;
     /* font-family: "Raleway", sans-serif; */
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     overflow: hidden;
 }
 
@@ -237,7 +237,7 @@ footer {
   width: 100%;
   height: 50px;
   background-color:black;
-  color: aliceblue;
+  color: rgb(248, 248, 248);
 
 }
 
@@ -247,7 +247,7 @@ footer {
 }
 
 form#login-form {
-    background: #fff;
+    background: rgb(248,248,248);
     width: 40em;
     margin: 300px auto 40px;
     overflow: hidden;
@@ -274,8 +274,7 @@ form#login-form div.idps {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    border-color: grey;
-    border-style: dotted;
+    border-style: none;
     
 }
 
@@ -327,7 +326,7 @@ div.idps input[type=password]:focus {
 
 div.idps #button {
     background: #B18760;
-    color: #fff;
+    color: rgb(248,248,248);
     outline: none;
     text-transform: uppercase;
     padding: 1.2em;
