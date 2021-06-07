@@ -2,23 +2,7 @@
   @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
   @import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
   @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
-  @media(min-width:701px) {
 
-/* Copyright (c) 2021 by Kaushalya R. Mandaliya (https://codepen.io/kman/pen/DFAzG) */
-[class*=fontawesome-]:before {
-    font-family: "FontAwesome", sans-serif;
-}
-
-/* body {
-    background: -owg-linear-gradient(left, #272838, #2b2d41, #393549, #433545);
-    background: -webkit-linear-gradient(left, #272838, #2b2d41, #393549, #433545);
-    background: -moz-linear-gradient(left, #272838, #2b2d41, #393549, #433545);
-    background: -o-linear-gradient(left, #272838, #2b2d41, #393549, #433545);
-    background: linear-gradient(left, #272838, #2b2d41, #393549, #433545);
-    font-family: "Raleway", sans-serif;
-} */
-
- 
   @media(min-width:701px) {
 
   /* Reset CSS */
@@ -41,7 +25,7 @@
 body {
     margin:0;
     /* font-family: "Raleway", sans-serif; */
-    background-color:  rgb(248,248,248);
+    background-color:  rgb(250,250,250);
     overflow: hidden;
 }
 
@@ -106,6 +90,7 @@ header ul {
   z-index: 30;
   display: inline-flex;
   padding-left: 6%;
+  height: 170px;
 }
 nav{
   display: inline-flex;
@@ -237,14 +222,11 @@ footer {
   width: 100%;
   height: 50px;
   background-color:black;
-  color:  rgb(248,248,248);
+  color:  rgb(170,170,170);
 
 }
 
 
- 
-
-}
 
 form#register-form {
    
@@ -252,7 +234,7 @@ form#register-form {
     margin: 220px auto 5px;
     overflow: hidden;
     position: relative;
-    left: 10%;
+    left: 13%;
     -webkit-border-radius: 0.3em;
     -moz-border-radius: 0.3em;
     -ms-border-radius: 0.3em;
@@ -324,7 +306,7 @@ div.idps input[type=password]:focus {
 
 div.idps #button {
     background: #B18760;
-    color:  rgb(248,248,248);
+    color:  rgb(250,250,250);
     outline: none;
     text-transform: uppercase;
     padding: 1.2em;

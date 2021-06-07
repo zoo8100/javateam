@@ -32,6 +32,9 @@ const output={
   notice: (req, res) => {
     res.render("home/notice");
   },
+  delivery: (req, res) => {
+    res.render("home/delivery");
+  },
 }
 
 const process = {
