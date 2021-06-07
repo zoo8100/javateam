@@ -104,6 +104,10 @@ nav div{
   flex: 1;
   float: left;
 }
+nav a {
+  display: inline-block;
+  width: 100%;
+}
 #nav1{
   flex: 1;
   display: flex;
@@ -121,6 +125,7 @@ nav div{
 #logo{
   flex: 1;
   margin-right: 3%;
+
 }
 #nav2{
   flex: 1;
