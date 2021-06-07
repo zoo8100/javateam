@@ -15,6 +15,14 @@ router.get("/notice", ctrl.output.notice);
 router.get("/jin", ctrl.output.jin);
 router.get("/logincustom", ctrl.output.logincustom);
 router.get("/delivery", ctrl.output.delivery);
+router.get("/n1", ctrl.output.n1);
+router.get("/n2", ctrl.output.n2);
+router.get("/n3", ctrl.output.n3);
+router.get("/n4", ctrl.output.n4);
+router.get("/n5", ctrl.output.n5);
+router.get("/n6", ctrl.output.n6);
+router.get("/n7", ctrl.output.n7);
+router.get("/n8", ctrl.output.n8);
 
 router.post("/logincustom", ctrl.process.logincustom);
 router.post("/register", ctrl.process.register);

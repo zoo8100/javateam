@@ -35,6 +35,31 @@ const output={
   delivery: (req, res) => {
     res.render("home/delivery");
   },
+  n1: (req, res) => {
+    res.render("home/n1");
+  },
+  n2: (req, res) => {
+    res.render("home/n2");
+  },
+  n3: (req, res) => {
+    res.render("home/n3");
+  },
+  n4: (req, res) => {
+    res.render("home/n4");
+  },
+  n5: (req, res) => {
+    res.render("home/n5");
+  },
+  n6: (req, res) => {
+    res.render("home/n6");
+  },
+  n7: (req, res) => {
+    res.render("home/n7");
+  },
+  n8: (req, res) => {
+    res.render("home/n8");
+  },
+
 }
 
 const process = {
