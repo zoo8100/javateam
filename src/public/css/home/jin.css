@@ -317,7 +317,9 @@ li {
 
 }
 
-
+#notice span {
+  text-align: right;
+}
 
 
 #notice ul {
