@@ -3,12 +3,20 @@
   @import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
  @media(min-width: 0px) and (max-width:700px) {
 
-  /* Reset CSS */
-  * {
-    box-sizing: border-box;
-    font-family: 'Noto Sans KR', sans-serif;
-  }
 
+  /* Reset CSS */
+ * {
+    box-sizing: border-box;
+    font-family: 'Rajdhani', sans-serif;
+    /* font-family: 'Noto Sans KR', sans-serif; */
+  }
+.container {
+  width:100%;
+  height: 100%;
+  display: flex;
+  flex-direction:column;
+  flex-wrap:nowrap;
+}
   
 [class*=fontawesome-]:before {
     font-family: "FontAwesome", sans-serif;
@@ -16,7 +24,13 @@
 
 body {
     margin:0;
-    font-family: "Raleway", sans-serif;
+    /* font-family: "Raleway", sans-serif; */
+    background-color: rgb(250,250,250);
+}
+
+.stopscroll{
+  margin: 0;
+  overflow: hidden;
 }
 
 header {
@@ -27,14 +41,19 @@ header {
   width: 100%;
   top: 0;
   left: 0;
-
+  z-index: 3;
 }
 
 header a {
   text-decoration: none;
-  font-size: 100%;
-  color: orange;
+  font-size: 20px;
+  font-family: 'Rajdhani', sans-serif;
+  color:#B18760;
 
+}
+header #nav2 a {
+  font-size: 25px;
+  font-family: 'Rajdhani', sans-serif;
 }
 
 header a:hover {
@@ -44,8 +63,8 @@ header a:hover {
 
 header li {
   display: inline-block;
-  padding-left: 50px;
-  padding-bottom: 30px;
+  padding: 2px 20px;
+  font-family: 'Rajdhani', sans-serif;
 }
 
 header ul {
@@ -54,31 +73,95 @@ header ul {
 
 .linner,
 .ginner {
-  transition: 0.5s;
-}
-
-.linner {
-  background-color: white;
-  height: 50px;
-  line-height: 50px;
-
+  transition: 0.8s;
+  position: relative;
 }
 
 .ginner {
-
-  background-color: black;
-  height: 80px;
+  width: 100%;
+  background-color: #620015;
   line-height: 30px;
+  z-index: 30;
+  display: inline-flex;
+  padding-left: 6%;
+  height: 170px;
+}
+.linner {
+  background-color:darkslategray;
+  height: 50px;
+  line-height: 50px;
+  z-index: 3;
+  box-shadow: inset 0 3px 10px black;
 }
 
-header.active .linner {
+nav{
+  display: inline-flex;
+  margin-top: 10px;
+  font-family: 'Rajdhani', sans-serif;
+}
+nav div{
+  flex: 1;
+  float: left;
+}
+nav a {
+  display: inline-block;
+  width: 100%;
+}
+#nav1{
+  flex: 1;
+  display: flex;
+  font-weight: 500;
+  line-height: 10px;
+}
+#nav1  div{
+  flex: 2;
+  float: left;
+  display: inline;
+}
+#nav1 div:nth-child(1) {
+  flex:3;
+}
+#logo{
+  flex: 1;
+  margin-right: 3%;
+
+}
+#nav2{
+  flex: 1;
+  display: flex;
+  margin-left: 6%;
+}
+
+#nav2 div{
+  flex: 1;
+}
+#nav2 div:nth-child(1){
+  flex: 3;
+}
+#nav2 li{
+  font-family:'Rajdhani', sans-serif;
+}
+#nav2 .sidemenu{
+  margin-left: -15%;
+}
+
+#mainmenu nav{
+  margin-top: 0px;
+  margin-right: 5%;
+  font-weight: bolder;
+}
+header.active .ginner {
   display: none;
 
 }
 
-header.active .ginner {
-  background-color: white;
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.548);
+header.active .linner {
+  box-shadow: inset 0 3px 10px black;
+  transform: translateY(-5px);
+}
+.ginner img{
+  width: 20%;
+  margin-bottom: -5%;
 }
 
 /* Hamburger button */
@@ -86,83 +169,55 @@ header.active .ginner {
   display: none;
 }
 label[for=trigger] {
-  width: 40px;
+  width: 100px;
   height: 20px;
   display: block;
   position: relative;
   cursor: pointer;
-  transition: 0.3s;
 }
-.sidebar_2 label {
+.sidebar_1 label {
   width: 100%;
   height: 100%;
+  cursor: default;
 }
-label[for=trigger] span {
-  display: block;
-  border-radius: 10%;
-  height: 8px;
-  background-color: white;
-  position: absolute;
-  width: 90px;
-  left: 10px;
-  transition: 0.3s;
-  z-index: 1000;
-  padding: 1px;
-}
-label[for=trigger] span:nth-child(1) {
-  top: 120%;
-}
-label[for=trigger] span:nth-child(2) {
-  top: 200%;
-}
-label[for=trigger] span:nth-child(3) {
-  top: 280%;
-}
-/* Sidebar Hamburger lines rotate */
-    input[id=trigger]:checked+label span:nth-child(1) {
-  transform: rotate(45deg);
-  top: 50%;
-  background-color: rgb(80, 80, 80);
-}
-input[id=trigger]:checked+label span:nth-child(2) {
-  opacity: 0;
-}
-input[id=trigger]:checked+label span:nth-child(3) {
-  transform: rotate(-45deg);
-  top: 50%;
-  background-color: rgb(80, 80, 80);
-}
-input[id=trigger]:checked+label {
-  left: 30%;
-} 
+
+
 
  /* Hamburger menubar */
 .sidebar_1 {
-  width: 30%;
-  height: 100vh;
-  background-color: rgb(0, 60, 128);
-  opacity: 90%;
+  width: 75%;
+  height: 300vh;
+  background-color: grey;
+  opacity: 10%;
   position: fixed;
   top: 0;
-  left: -30%;
-  transition: 0.5s;
+  left: -75%;
+  transition: 0.0001s;
   color: black;
   z-index: 800;
   text-align: left;
+ 
 }
 .sidebar_2 {
-  width: 70%;
-  height: 100vh;
-  background-color: grey;
-  opacity: 20%;
+  width: 25%;
+  height: 300vh;
+  background-color: white;
+  opacity: 100%;
   position: fixed;
   top: 0;
-  right: -70%;
+  right: -25%;
   z-index: 900;
   transition: 0.5s;
   color: black;
 }
- 
+
+.xi-close{
+  font-size: 26px;
+  float: right;
+  margin-top: 20px;
+  margin-right: 30px;
+  color: darkslategrey;
+}
 
     
 input[id=trigger]:checked~.sidebar_1 {
@@ -172,52 +227,102 @@ input[id=trigger]:checked~.sidebar_2 {
   right: 0;
 } 
 
+.main{
 
-
-section .backg {
-  width: 100%;
-  height: 500px;
-  background-color: white;
-  color: black;
-  background: url("/img/cupcake-2749204_640.jpg") no-repeat center center;
-  background-size: cover;
-  transition: 0.5s;
-  z-index: 1000;
+  overflow-y: hidden;
+  min-height:2em;
+ 
 }
 
-#main div {
+
+.backg {
+  width: 100%;
+  height: 650px;
+  /* background-color: white; */
+  background: url(/img/cakesmod.jpg) no-repeat center center;
+  background-size: cover;
+  transition: 0.5s;
+  /* z-index: 1000; */
+  margin-top: 100px;
+  position: relative;
+  z-index: -1;
+  box-shadow:inset 0 3px 10px black, 0 3px 10px black;
+}
+
+#sentence {
+
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  color: rgb(248, 248, 248);
+  font-size: 15px;
+  z-index: -1;
+}
+#shopnow{
+  position: absolute;
+  top: 60%;
+  left:30%;
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  border-style: none;
+  background-color: #B18760;
+}
+
+#shopnow a{
+  text-decoration: none;
+  font-weight: bolder;
+  color: rgb(248,248,248);
+  position: relative;
+  left: 20%;
+  top: 25%;
+  padding: 10px 10px;
+}
+
+
+
+#article {
   line-height: 90px;
+  margin: auto 10%;
+
 }
 
 .parent {
-  border: 1px solid black;
+ 
   width: 100%;
   height: 600px;
-  margin: 20% 0%;
   overflow: hidden;
 
 }
 
 .parent div {
   float: left;
-  border: 3px solid red;
-  width: 50%;
-  height: 600px;
+  width: 700px;
+  height: 500px;
   box-sizing: border-box;
   text-align: center;
   line-height: 200px;
   font-size: 3em;
+  position: relative;
+  z-index: -10;
 }
 
 .left {
   animation: ltr 1s linear both;
-
+  /* background: url(/img/tartintro.jpg) no-repeat center center;
+  background-size: cover;
+   */
 }
 
 .right {
   animation: rtl 1s linear both;
+  /* background: url(/img/newimage.jpg) no-repeat center left;
+  background-size: cover; */
+
 }
 
+
+/* keyframes로 박스 애니메이션 */
 @keyframes ltr {
   0% {
     opacity: 0;
@@ -226,7 +331,7 @@ section .backg {
 
   100% {
     opacity: 1;
-    transform: translateX(-50px);
+    transform: translateX(-10px);
   }
 }
 
@@ -238,7 +343,7 @@ section .backg {
 
   100% {
     opacity: 1;
-    transform: translateX(50px);
+    transform: translateX(120px);
   }
 }
 
@@ -267,22 +372,25 @@ footer {
   width: 100%;
   height: 100px;
   margin:0px;
-  background-color: teal;
-}
-.slick-slider{
-  width:80%
-}
-.review {
-width:80%;
-  margin: auto;
-  
+  background-color:black;
+  color: rgb(170,170,170);
+
 }
 
+.review {
+ width:80%;
+  margin: auto;
+}
 .review div {
-  border: 1px solid #000;
   height: 300px;
+}
+.review img {
+/*  
+  border: 1px solid #000; */
+ object-position: center center;
+  object-fit: none;
   
-  background-color: #ddd;
+  /* background-color: #ddd; */
 }
 
 .slick-arrow {
@@ -290,5 +398,9 @@ width:80%;
 }
 
 
- 
+ .stopscroll{
+   height: 100%;
+   overflow-y: hidden;
+}
+
 }

@@ -341,7 +341,7 @@ input[id=trigger]:checked~.sidebar_2 {
 
   100% {
     opacity: 1;
-    transform: translateX(100px);
+    transform: translateX(120px);
   }
 }
 
