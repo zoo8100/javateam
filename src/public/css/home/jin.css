@@ -25,7 +25,7 @@
 body {
     margin:0;
     /* font-family: "Raleway", sans-serif; */
-    background-color: white;
+    /* background-color: white; */
 }
 
 .stopscroll{
@@ -243,77 +243,53 @@ input[id=trigger]:checked~.sidebar_2 {
 
 #notice {
   position: relative;
-
   z-index: 1;
-
-  width: 500px;
-
+  width: 50%;
   margin: 5% auto 5%;
-
   box-sizing: border-box;
-
-  /*outline: 1px dashed black;*/
-
 }
-
-
-
 
 #notice h1 {
 
   font-size: 25px;
-
   text-align: center;
-
   margin: 10px 180px;
-
   padding: 10px;
-
   color: black;
-
   background: white;
-
   border-radius: 30px;
-
 }
 
 #notice span {
   text-align: right;
 }
 
-
 #notice ul {
-
   width: 100%;
-
 }
-
-
-
 
 #notice ul li {
 
   line-height: 30px; /*li 세로 간격*/
-
   padding-left: 20px;
-
   list-style: none;
 }
 
-
-
-
 #notice ul li:first-child {
-
   border-top: 2px solid black;
-
   border-bottom: 2px solid black;
 }
 
 #notice a {
-   text-decoration: none;
-
+  text-decoration: none;
   color: black;
+  float: inline-start;
+}
+
+
+#notice span{
+  float: right;
+  margin-right: 2%;
 }
 
 
@@ -323,7 +299,7 @@ footer {
   height: 100px;
   margin:0px;
   background-color:black;
-  color: aliceblue;
+  color: rgb(170 170 170);
 
 }
 
