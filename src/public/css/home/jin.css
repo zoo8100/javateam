@@ -296,7 +296,9 @@ li {
 
 }
 
-
+#notice ol {
+  text-align: right;
+}
 
 
 #notice h1 {
@@ -317,9 +319,6 @@ li {
 
 }
 
-#notice ol {
-  text-align: right;
-}
 
 
 #notice ul {
