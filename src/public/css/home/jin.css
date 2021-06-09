@@ -249,6 +249,7 @@ input[id=trigger]:checked~.sidebar_2 {
   box-sizing: border-box;
 }
 
+
 #notice h1 {
 
   font-size: 25px;
@@ -260,9 +261,6 @@ input[id=trigger]:checked~.sidebar_2 {
   border-radius: 30px;
 }
 
-#notice span {
-  text-align: right;
-}
 
 #notice ul {
   width: 100%;
